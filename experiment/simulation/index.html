@@ -1,0 +1,3308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Experiment 1</title>
+	<!-- Add CSS at the head of HTML file -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+		<!-- Your code goes here-->
+		<div id="mySidepanel" class="sidepanel">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<ul id="lists">
+				<h2>Procedure to Perform the wear test.</h2>
+
+        <li>You can use the "HELP!" button get the knowledge about wear and tribology lab experiment.
+          </li>
+		<li>Step 1: Select the combination 1 or combination 2 on which you want to perform the experiment.
+          </li>
+          <li>Step 2: Select the "Input ball" button To bring the ball near the pin.</li>
+          <li>Step 3: Insert the ball inside the pin Using the button.
+          </li>
+          <li>Step 4: Now put the pin on the tribometer Using the button.
+          </li>
+		  <li>Step 5: Select the "Input load (10N)" button put the load on the pin.
+          </li>
+		  <li>Step 6: Now start the rotation of disk to perform the experiment.
+          </li>
+		  <li>Step 7: Use the result button to get the final output.
+
+		</ul>
+		<CENTER><h2>THANK YOU!</h2></CENTER>
+	</div>
+	<button class="openbtn" onclick="openNav()">☰ Open Procedure</button>
+
+
+	 <center><button class="openbtn" id="playButton" >HELP !</button></center>
+	<div class="video-player">
+		<video id="video" controls>
+			<source src="Expt. 1 video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<span id="closeButton" class="close-button">&times;</span>
+	</div>
+
+	<br><br>
+    
+	<div class="allbox">
+
+		<section class="main-section3">
+            <!-- <h3 style="margin-left:500px; margin-top: 20px; text-decoration: underline;">Abrasive and Adhesive wear test Material</h4> -->
+				<center><strong><h1 style="margin-top:20px;  text-decoration: underline ;">Adhesive and Abrasive wear test Material</h1></strong></center><br>
+				<div class="left-right">  
+                <div class="left">
+					<center><h3 style="margin-left: 20px;">Combination 1:</h3></center>
+					<center><img src="c1.png" alt="Combination 1" class="img1"></center>
+					<center><strong><h3 style="margin-top:2px; ">Tribo-couple for Adhesive wear test</h3></strong></center>
+				</div>
+				<div class="right">
+					<center><h3 >Combination 2:</h3></center>
+					<center><img src="c2.jpg" alt="Combination 2" class="img2"></center>
+					<center><strong><h3 style="margin-top:2px;">Tribo-couple for Abrasive wear test</h3></strong></center>
+				</div>
+			</div>
+			</section>
+			
+		
+        <div class="container">
+
+            <section class="main-section">
+				<center><strong><h1 style="margin-top:20px ;">Material Testing</h1></strong></center>
+                <div class="control-container">
+
+	  <h2 class="m">Input Parameters:</h2><br>
+	  
+	  <h3 class="m">Enter the Material (couple Material):</h3><br>
+	  <button class="button button1 B " id="moveButton"  onclick="toggleButtons()">Choice Combination 1</button>  
+	  <button class="button button1 B " id="moveButton2"  onclick="toggleButtons()">Choice Combination 2</button>
+	  <button class="button button1 B" id="moveButton3">Input Ball</button>
+	  <button class="button button1 hidden B" id="moveButton4" >Insert The Ball</button>
+	  <!-- <button class="button button1 hidden" id="moveButton4" >Move Handle</button> -->
+	  <button class="button button1 hidden B" id="moveButton5" >pin on tribometer</button>
+	  <button class="button button1 hidden  B" id="moveButton6" >Input Load (10N)</button>
+	  <button class="button button1 hidden B" id="moveButton7" style="cursor: pointer;" >Start Rotation</button>
+	  <button class="button button1 hidden  B" id="moveButton8" >Show Result</button>
+	   
+				</div>	  
+			</section>
+
+            <section class="main-section2 ">
+				<center>
+                    <h4 style="text-align:center; margin-top: 20px;">
+                        PIN-ON-DISC TRIBOMETER
+                    </h4>
+                </center>
+				
+
+
+				
+				<div style="height:100% ; width:100%; position: relative;" >
+					<button class="button button1" id="refreshButton">Reset Combination</button>
+				<!-- SVG IMAGE PART -->
+				<div id="elementName"></div>
+                <svg id="svgContainer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2291 1279" style="enable-background:new 0 0 2291 1279;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="383" xlink:href="9BBCED7F.png"  transform="matrix(0.4805 0 0 0.4805 392.5 492.4902)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		<image style="overflow:visible;" width="1527" height="525" xlink:href="9BBCED7D.png"  transform="matrix(1 0 0 1 202.5 602.5)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="854" height="342" xlink:href="9BBCED83.png"  transform="matrix(1 0 0 1 311.1266 578.7159)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="279" xlink:href="9BBCED85.png"  transform="matrix(0.9746 0 0 0.9746 309 467.542)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		<image style="overflow:visible;" width="210" height="137" xlink:href="9BBCED87.png"  transform="matrix(1 0 0 1 432 627.5)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="340" xlink:href="9BBCED84.png"  transform="matrix(0.4062 0 0 0.4062 743 530.9375)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="340" xlink:href="9BBCED8C.png"  transform="matrix(0.4062 0 0 0.4062 601 577.9375)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		<image style="overflow:visible;" width="527" height="278" xlink:href="9BBCED8D.png"  transform="matrix(1 0 0 1 548 529)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="494" xlink:href="9BBCED8F.png"  transform="matrix(0.2129 0 0 0.2129 676.4775 706.4751)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="435" height="512" xlink:href="824E536C.png"  transform="matrix(0.2207 0 0 0.2207 499.9216 485.4694)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="433" height="512" xlink:href="824E536B.png"  transform="matrix(0.3789 0 0 0.3789 697.9668 661)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="494" xlink:href="824E5364.png"  transform="matrix(0.2129 0 0 0.2129 997.1889 623.7078)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="433" height="512" xlink:href="824E5367.png"  transform="matrix(0.3789 0 0 0.3789 999.9668 568)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="214" xlink:href="824E5365.png"  transform="matrix(0.9102 0 0 0.9102 550.25 482.8633)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="422" height="512" xlink:href="824E537B.png"  transform="matrix(0.1777 0 0 0.1777 995.998 484.5)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="359" height="512" xlink:href="824E537C.png"  transform="matrix(0.2148 0 0 0.2148 996.6264 407)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="397" height="512" xlink:href="824E537F.png"  transform="matrix(0.2949 0 0 0.2949 940.6489 284.0572)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="331" xlink:href="824E537D.png"  transform="matrix(0.8652 0 0 0.8652 603.874 387.8036)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="434" height="512" xlink:href="824E537A.png"  transform="matrix(0.1777 0 0 0.1777 610.9316 601.5)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="478" height="512" xlink:href="824E539F.png"  transform="matrix(0.1445 0 0 0.1445 585.457 646)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="26" height="122" xlink:href="824E5399.png"  transform="matrix(1 0 0 1 536.8661 671.5952)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="316" xlink:href="824E539B.png"  transform="matrix(0.1172 0 0 0.1172 524 647.4844)">
+		</image>
+	</g>
+</g>
+<path class="st0" d="M704.5,798.5"/>
+<path class="st0" d="M454.5,718.5"/>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="439" height="512" xlink:href="824E5396.png"  transform="matrix(0.1895 0 0 0.1895 768.2795 732.311)">
+		</image>
+	</g>
+</g>
+<path class="st0" d="M806.5,828.5"/>
+<path class="st0" d="M686.5,791.5"/>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="439" height="512" xlink:href="824E5397.png"  transform="matrix(0.1895 0 0 0.1895 1072.7666 637.2692)">
+		</image>
+	</g>
+</g>
+<path class="st0" d="M1159.5,718.5"/>
+<path class="st0" d="M779.5,836.5"/>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="355" xlink:href="824E5389.png"  transform="matrix(0.127 0 0 0.127 916.7825 347.4353)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		<g>
+			<image style="overflow:visible;" width="257" height="129" xlink:href="824E538B.png"  transform="matrix(1 0 0 1 1123 867)">
+			</image>
+		</g>
+	</g>
+	<g>
+		<g>
+			<g>
+				
+					<image style="overflow:visible;" width="512" height="272" xlink:href="824E538E.png"  transform="matrix(0.4375 0 0 0.4375 1139.5878 815.3547)">
+				</image>
+			</g>
+		</g>
+		<g>
+			<g>
+				<image id="targetObject" id="targetObject2" id="targetObject6" id="rotating base" data-name="rotating base" class="target" style="overflow:visible;" width="257" height="129" xlink:href="824E538F.png"  transform="matrix(1 0 0 1 1123 772)">
+				</image>
+			</g>
+		</g>
+		<g>
+			<g>
+				
+					<image style="overflow:visible;" width="512" height="366" xlink:href="824E538A.png"  transform="matrix(9.570312e-02 0 0 9.570312e-02 1158 763.4863)">
+				</image>
+			</g>
+		</g>
+		<g>
+			<g>
+				
+					<image style="overflow:visible;" width="512" height="352" xlink:href="824E53AE.png"  transform="matrix(9.960938e-02 0 0 9.960938e-02 1301.5 762.9688)">
+				</image>
+			</g>
+		</g>
+		<g>
+			<g>
+				
+					<image style="overflow:visible;" width="512" height="366" xlink:href="824E5391.png"  transform="matrix(9.570312e-02 0 0 9.570312e-02 1296 809.4863)">
+				</image>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			
+				<image style="overflow:visible;" width="512" height="352" xlink:href="824E5392.png"  transform="matrix(9.960938e-02 0 0 9.960938e-02 1149.5 809.9688)">
+			</image>
+		</g>
+	</g>
+</g>
+
+<g>
+	<!-- Add your SVG images here with the class "svg-image" -->
+		   <!-- frame 1 -->
+		   <svg class="svg-image" version="1.1"  width="2200px" height="2200px" x="150px" y="-250px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+		   viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+	  <style type="text/css">
+		  .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	  </style>
+	  <path class="st0" d="M960.5,1079.5"/>
+	  <g>
+		  <g>
+			  <g>
+				  
+					  <image style="overflow:visible;" width="512" height="272" xlink:href="5639D0E0.png"  transform="matrix(0.4375 0 0 0.4375 847.991 508.1775)">
+				  </image>
+			  </g>
+		  </g>
+		  <g>
+			  <g>
+				  
+					  <image style="overflow:visible;" width="512" height="257" xlink:href="5639D0E1.png"  transform="matrix(0.502 0 0 0.502 831.4033 464.8216)">
+				  </image>
+			  </g>
+		  </g>
+		  <g>
+			  <g>
+				  
+					  <image style="overflow:visible;" width="512" height="366" xlink:href="5639D0E7.png"  transform="matrix(9.570312e-02 0 0 9.570312e-02 866.4033 456.309)">
+				  </image>
+			  </g>
+		  </g>
+		  <g>
+			  <g>
+				  
+					  <image style="overflow:visible;" width="512" height="352" xlink:href="5639D0E2.png"  transform="matrix(9.960938e-02 0 0 9.960938e-02 1009.9033 455.7914)">
+				  </image>
+			  </g>
+		  </g>
+		  <g>
+			  <g>
+				  
+					  <image style="overflow:visible;" width="512" height="366" xlink:href="5639D0E3.png"  transform="matrix(9.570312e-02 0 0 9.570312e-02 1004.4033 502.309)">
+				  </image>
+			  </g>
+		  </g>
+		  <g>
+			  <g>
+				  
+					  <image style="overflow:visible;" width="512" height="352" xlink:href="5639D0EE.png"  transform="matrix(9.960938e-02 0 0 9.960938e-02 857.9033 502.7913)">
+				  </image>
+			  </g>
+		  </g>
+		  <path class="st0" d="M959.5,624"/>
+		  <path class="st0" d="M960.5,594"/>
+	  </g>
+	  <path class="st0" d="M960.5,1079.5"/>
+	  </svg>
+   
+	  <!-- frame 2 -->
+   
+	  <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+	   .st1{fill:url(#SVGID_1_);}
+	   .st2{fill:none;stroke:url(#SVGID_00000059299479200034719240000012560344292807383987_);stroke-miterlimit:10;}
+	   .st3{fill:url(#SVGID_00000119083019823614236530000006088585439597783979_);}
+	   .st4{fill:none;stroke:url(#SVGID_00000067953067535690440900000003742061014437642403_);stroke-miterlimit:10;}
+	   .st5{fill:url(#SVGID_00000071552124974394919120000017747931797093401264_);}
+	   .st6{fill:none;stroke:url(#SVGID_00000064321060046866879170000011625171761420509580_);stroke-miterlimit:10;}
+	   .st7{fill:url(#SVGID_00000050621319211822968460000014102394567613214867_);}
+	   .st8{fill:none;stroke:url(#SVGID_00000013152680006534073800000011860843015813978007_);stroke-miterlimit:10;}
+	   .st9{fill:none;stroke:#000000;stroke-miterlimit:10;}
+   </style>
+   <path class="st0" d="M959.5,1079.5"/>
+   <g>
+	   <g>
+		   <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="677.9429" x2="945.7655" y2="677.9429">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path class="st1" d="M945.8,677.9"/>
+		   
+			   <linearGradient id="SVGID_00000098185413398502216330000003365591401269596593_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="677.9429" x2="945.7655" y2="677.9429">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000098185413398502216330000003365591401269596593_);stroke-miterlimit:10;" d="
+			   M945.8,677.9"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000017501441494905068420000001116561327737759933_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="678.0597" x2="974.5247" y2="678.0597">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000017501441494905068420000001116561327737759933_);" d="M974.5,678.1"/>
+		   
+			   <linearGradient id="SVGID_00000000913910451209140150000015628242567978433665_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="678.0597" x2="974.5247" y2="678.0597">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000000913910451209140150000015628242567978433665_);stroke-miterlimit:10;" d="
+			   M974.5,678.1"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000077326702616527569120000011570994135458680493_" gradientUnits="userSpaceOnUse" x1="960.491" y1="402.7049" x2="960.491" y2="402.7049">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000077326702616527569120000011570994135458680493_);" d="M960.5,402.7"/>
+		   
+			   <linearGradient id="SVGID_00000104695340978009853830000011551334971394398368_" gradientUnits="userSpaceOnUse" x1="960.491" y1="402.7049" x2="960.491" y2="402.7049">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000104695340978009853830000011551334971394398368_);stroke-miterlimit:10;" d="
+			   M960.5,402.7"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000034791283179662742350000011439645353767540150_" gradientUnits="userSpaceOnUse" x1="960.491" y1="402.7049" x2="960.491" y2="402.7049">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000034791283179662742350000011439645353767540150_);" d="M960.5,402.7"/>
+		   
+			   <linearGradient id="SVGID_00000155864221762215390130000006576926198537613751_" gradientUnits="userSpaceOnUse" x1="960.491" y1="402.7049" x2="960.491" y2="402.7049">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000155864221762215390130000006576926198537613751_);stroke-miterlimit:10;" d="
+			   M960.5,402.7"/>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="281" xlink:href="1048252B.png"  transform="matrix(0.4355 0 0 0.4355 848.5877 506.6008)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="265" xlink:href="10482529.png"  transform="matrix(0.502 0 0 0.502 831.5 462.9316)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="359" xlink:href="1048252F.png"  transform="matrix(9.765625e-02 0 0 9.765625e-02 862 453.9111)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="369" xlink:href="10482528.png"  transform="matrix(9.765625e-02 0 0 9.765625e-02 1002.5 452.9228)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="359" xlink:href="10482526.png"  transform="matrix(9.765625e-02 0 0 9.765625e-02 1008 503.9111)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="369" xlink:href="10482527.png"  transform="matrix(9.765625e-02 0 0 9.765625e-02 861.5 501.9228)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st0" d="M960.1,624.4"/>
+	   <path class="st9" d="M958.4,596.5"/>
+   </g>
+   <path class="st9" d="M957.8,1079.5"/>
+   </svg>
+   
+   <!-- frame 3 -->
+   
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:url(#SVGID_1_);}
+	   .st1{fill:none;stroke:url(#SVGID_00000127727783523922618480000003822193937243792307_);stroke-miterlimit:10;}
+	   .st2{fill:url(#SVGID_00000067230680332202011320000014467666405222104460_);}
+	   .st3{fill:none;stroke:url(#SVGID_00000121271185899756030060000011119588021605359802_);stroke-miterlimit:10;}
+	   .st4{fill:url(#SVGID_00000145034238830116101900000005960345150172682681_);}
+	   .st5{fill:none;stroke:url(#SVGID_00000181045233932612072520000011829610191258954120_);stroke-miterlimit:10;}
+	   .st6{fill:url(#SVGID_00000065041803043385802070000004588620481875732115_);}
+	   .st7{fill:none;stroke:url(#SVGID_00000150783569264387557480000006170776878805046408_);stroke-miterlimit:10;}
+	   .st8{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+	   .st9{fill:none;stroke:#000000;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="679.4429" x2="945.7655" y2="679.4429">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path class="st0" d="M945.8,679.4"/>
+		   
+			   <linearGradient id="SVGID_00000144296859495829472040000005831513234793856138_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="679.4429" x2="945.7655" y2="679.4429">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000144296859495829472040000005831513234793856138_);stroke-miterlimit:10;" d="
+			   M945.8,679.4"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000078013449377983097830000006982872545345634740_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="679.5597" x2="974.5247" y2="679.5597">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000078013449377983097830000006982872545345634740_);" d="M974.5,679.6"/>
+		   
+			   <linearGradient id="SVGID_00000093173338041852932170000006153532077712405138_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="679.5597" x2="974.5247" y2="679.5597">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000093173338041852932170000006153532077712405138_);stroke-miterlimit:10;" d="
+			   M974.5,679.6"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000153685637141566350640000017280211916357011107_" gradientUnits="userSpaceOnUse" x1="960.491" y1="404.2049" x2="960.491" y2="404.2049">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000153685637141566350640000017280211916357011107_);" d="M960.5,404.2"/>
+		   
+			   <linearGradient id="SVGID_00000113355263824961501930000001092695014956122024_" gradientUnits="userSpaceOnUse" x1="960.491" y1="404.2049" x2="960.491" y2="404.2049">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000113355263824961501930000001092695014956122024_);stroke-miterlimit:10;" d="
+			   M960.5,404.2"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000052082704450031492460000015790899987897153409_" gradientUnits="userSpaceOnUse" x1="960.491" y1="404.2049" x2="960.491" y2="404.2049">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000052082704450031492460000015790899987897153409_);" d="M960.5,404.2"/>
+		   
+			   <linearGradient id="SVGID_00000113343574770350557470000018433109828538922926_" gradientUnits="userSpaceOnUse" x1="960.491" y1="404.2049" x2="960.491" y2="404.2049">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000113343574770350557470000018433109828538922926_);stroke-miterlimit:10;" d="
+			   M960.5,404.2"/>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="281" xlink:href="CA567972.png"  transform="matrix(0.4355 0 0 0.4355 848.5877 505.1008)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="264" xlink:href="CA567976.png"  transform="matrix(0.5 0 0 0.5 832 461.9404)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="342" xlink:href="CA567971.png"  transform="matrix(9.960938e-02 0 0 9.960938e-02 856.5 455.9072)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="384" xlink:href="CA567973.png"  transform="matrix(9.375000e-02 0 0 9.375000e-02 1001.5 450.4404)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="342" xlink:href="CA567970.png"  transform="matrix(9.960938e-02 0 0 9.960938e-02 1009.5 500.9072)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="384" xlink:href="CA56797E.png"  transform="matrix(9.375000e-02 0 0 9.375000e-02 867.5 503.4404)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st8" d="M960.1,622.9"/>
+	   <path class="st9" d="M959,594"/>
+   </g>
+   <path class="st9" d="M958.9,1079.2"/>
+   </svg>
+   
+   <!-- frame 4 -->
+   
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px" x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:url(#SVGID_1_);}
+	   .st1{fill:none;stroke:url(#SVGID_00000047029637262630381580000013979558367263291829_);stroke-miterlimit:10;}
+	   .st2{fill:url(#SVGID_00000183943539595553949040000003619756465388797096_);}
+	   .st3{fill:none;stroke:url(#SVGID_00000026880240335526962090000005711031277411749248_);stroke-miterlimit:10;}
+	   .st4{fill:url(#SVGID_00000174599089167260725400000017561707226972682403_);}
+	   .st5{fill:none;stroke:url(#SVGID_00000021107787759393696170000017544194721178236845_);stroke-miterlimit:10;}
+	   .st6{fill:url(#SVGID_00000130617283985752612780000013962975130764805509_);}
+	   .st7{fill:none;stroke:url(#SVGID_00000079457266952502173650000003638566547416722072_);stroke-miterlimit:10;}
+	   .st8{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="678.9429" x2="945.7655" y2="678.9429">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path class="st0" d="M945.8,678.9"/>
+		   
+			   <linearGradient id="SVGID_00000054962114309624820670000006140599352562276287_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="678.9429" x2="945.7655" y2="678.9429">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000054962114309624820670000006140599352562276287_);stroke-miterlimit:10;" d="
+			   M945.8,678.9"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000128481910579562925650000013559504922607727238_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="679.0597" x2="974.5247" y2="679.0597">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000128481910579562925650000013559504922607727238_);" d="M974.5,679.1"/>
+		   
+			   <linearGradient id="SVGID_00000059285967640376210750000002407603069163014802_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="679.0597" x2="974.5247" y2="679.0597">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000059285967640376210750000002407603069163014802_);stroke-miterlimit:10;" d="
+			   M974.5,679.1"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000018235696325182739320000002539683299849611687_" gradientUnits="userSpaceOnUse" x1="960.491" y1="404.7049" x2="960.491" y2="404.7049">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000018235696325182739320000002539683299849611687_);" d="M960.5,404.7"/>
+		   
+			   <linearGradient id="SVGID_00000168110714666474894980000018084864486045616035_" gradientUnits="userSpaceOnUse" x1="960.491" y1="404.7049" x2="960.491" y2="404.7049">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000168110714666474894980000018084864486045616035_);stroke-miterlimit:10;" d="
+			   M960.5,404.7"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000099646332149962326730000015308634215762005408_" gradientUnits="userSpaceOnUse" x1="960.491" y1="404.7049" x2="960.491" y2="404.7049">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000099646332149962326730000015308634215762005408_);" d="M960.5,404.7"/>
+		   
+			   <linearGradient id="SVGID_00000073001420598849641950000000832893039820636327_" gradientUnits="userSpaceOnUse" x1="960.491" y1="404.7049" x2="960.491" y2="404.7049">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000073001420598849641950000000832893039820636327_);stroke-miterlimit:10;" d="
+			   M960.5,404.7"/>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="275" xlink:href="8464CDBD.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 506.1389)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="262" xlink:href="8464CDBF.png"  transform="matrix(0.5 0 0 0.5 832 462.9404)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="335" xlink:href="8464CDBA.png"  transform="matrix(0.1016 0 0 0.1016 852 458.4286)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="401" xlink:href="8464CDBB.png"  transform="matrix(8.984375e-02 0 0 8.984375e-02 999.5 449.9267)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="335" xlink:href="8464CDC5.png"  transform="matrix(0.1016 0 0 0.1016 1014 499.4286)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="401" xlink:href="8464CDC7.png"  transform="matrix(8.984375e-02 0 0 8.984375e-02 876.5 504.9267)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st8" d="M960.1,623.4"/>
+   </g>
+   </svg>
+   
+   <!-- frame 5 -->
+   
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:url(#SVGID_1_);}
+	   .st1{fill:none;stroke:url(#SVGID_00000072256473260841247680000016167156528888311438_);stroke-miterlimit:10;}
+	   .st2{fill:url(#SVGID_00000121981277898306610280000012318473622660515765_);}
+	   .st3{fill:none;stroke:url(#SVGID_00000106114351750203576760000005080545007324930957_);stroke-miterlimit:10;}
+	   .st4{fill:url(#SVGID_00000057847541922152868300000006940901312961389698_);}
+	   .st5{fill:none;stroke:url(#SVGID_00000000929300912101096530000006330618724873973681_);stroke-miterlimit:10;}
+	   .st6{fill:url(#SVGID_00000013193864260349518130000004870250672676663714_);}
+	   .st7{fill:none;stroke:url(#SVGID_00000063613823897630477680000000459053678692768933_);stroke-miterlimit:10;}
+	   .st8{fill:url(#SVGID_00000132085081386818374300000008782525431826173069_);}
+	   .st9{fill:none;stroke:url(#SVGID_00000003814198656145819720000010229530491259209650_);stroke-miterlimit:10;}
+	   .st10{fill:url(#SVGID_00000098920181958279184430000013086584419547018671_);}
+	   .st11{fill:none;stroke:url(#SVGID_00000026873140404650052430000000262280575055801267_);stroke-miterlimit:10;}
+	   .st12{fill:url(#SVGID_00000036213190094917847300000015917389760758557362_);}
+	   .st13{fill:none;stroke:url(#SVGID_00000062871964142202961660000012609811354799979653_);stroke-miterlimit:10;}
+	   .st14{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+	   .st15{fill:none;stroke:#000000;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="943.7606" y1="397.7942" x2="943.7606" y2="397.7942">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path class="st0" d="M943.8,397.8"/>
+		   
+			   <linearGradient id="SVGID_00000048466978279578619190000007630251688338672555_" gradientUnits="userSpaceOnUse" x1="943.7606" y1="397.7942" x2="943.7606" y2="397.7942">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000048466978279578619190000007630251688338672555_);stroke-miterlimit:10;" d="
+			   M943.8,397.8"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000108279810701622765420000005347516115497839009_" gradientUnits="userSpaceOnUse" x1="943.7606" y1="397.7942" x2="943.7606" y2="397.7942">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000108279810701622765420000005347516115497839009_);" d="M943.8,397.8"/>
+		   
+			   <linearGradient id="SVGID_00000170256850967471014450000004782106216718855837_" gradientUnits="userSpaceOnUse" x1="943.7606" y1="397.7942" x2="943.7606" y2="397.7942">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000170256850967471014450000004782106216718855837_);stroke-miterlimit:10;" d="
+			   M943.8,397.8"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000134942488718601223990000000998606836270193855_" gradientUnits="userSpaceOnUse" x1="943.2696" y1="397.0296" x2="943.2696" y2="397.0296">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000134942488718601223990000000998606836270193855_);" d="M943.3,397"/>
+		   
+			   <linearGradient id="SVGID_00000066515667718118075790000001389188219086376369_" gradientUnits="userSpaceOnUse" x1="943.2696" y1="397.0296" x2="943.2696" y2="397.0296">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000066515667718118075790000001389188219086376369_);stroke-miterlimit:10;" d="
+			   M943.3,397"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000143583209110487828800000007950955149482729366_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="682.8535" x2="945.7655" y2="682.8535">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000143583209110487828800000007950955149482729366_);" d="M945.8,682.9"/>
+		   
+			   <linearGradient id="SVGID_00000183941724914821327390000016359358633448461201_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="682.8535" x2="945.7655" y2="682.8535">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000183941724914821327390000016359358633448461201_);stroke-miterlimit:10;" d="
+			   M945.8,682.9"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000110439969954552703040000015964161229988728706_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="682.9704" x2="974.5247" y2="682.9704">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000110439969954552703040000015964161229988728706_);" d="M974.5,683"/>
+		   
+			   <linearGradient id="SVGID_00000060032669484600579300000003053579722921809074_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="682.9704" x2="974.5247" y2="682.9704">
+			   <stop  offset="0" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+			   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+			   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+			   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+			   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+			   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+			   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+			   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+			   <stop  offset="0.9425" style="stop-color:#737373"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000060032669484600579300000003053579722921809074_);stroke-miterlimit:10;" d="
+			   M974.5,683"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000021104628026464104220000005604852561292340871_" gradientUnits="userSpaceOnUse" x1="960.491" y1="420.6155" x2="960.491" y2="420.6155">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000021104628026464104220000005604852561292340871_);" d="M960.5,420.6"/>
+		   
+			   <linearGradient id="SVGID_00000023978730523085335420000005826793461989678985_" gradientUnits="userSpaceOnUse" x1="960.491" y1="420.6155" x2="960.491" y2="420.6155">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000023978730523085335420000005826793461989678985_);stroke-miterlimit:10;" d="
+			   M960.5,420.6"/>
+	   </g>
+	   <g>
+		   
+			   <linearGradient id="SVGID_00000084513332165592268250000002158946003042442912_" gradientUnits="userSpaceOnUse" x1="960.491" y1="420.6155" x2="960.491" y2="420.6155">
+			   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+			   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+			   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+			   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+			   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.6583" style="stop-color:#939393"/>
+			   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+			   <stop  offset="0.8186" style="stop-color:#676767"/>
+			   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+			   <stop  offset="1" style="stop-color:#595959"/>
+		   </linearGradient>
+		   <path style="fill:url(#SVGID_00000084513332165592268250000002158946003042442912_);" d="M960.5,420.6"/>
+		   
+			   <linearGradient id="SVGID_00000029735854037672157740000008435686271054589375_" gradientUnits="userSpaceOnUse" x1="960.491" y1="420.6155" x2="960.491" y2="420.6155">
+			   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+			   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+			   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+			   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+			   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+			   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+			   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+			   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+			   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+			   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+			   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+			   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+			   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+			   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+			   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+			   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+			   <stop  offset="0.9919" style="stop-color:#757575"/>
+			   <stop  offset="1" style="stop-color:#616161"/>
+		   </linearGradient>
+		   <path style="fill:none;stroke:url(#SVGID_00000029735854037672157740000008435686271054589375_);stroke-miterlimit:10;" d="
+			   M960.5,420.6"/>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="272" xlink:href="3E732204.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 513.2058)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="258" xlink:href="3E732205.png"  transform="matrix(0.5 0 0 0.5 832 469.851)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="319" xlink:href="3E732203.png"  transform="matrix(0.1035 0 0 0.1035 849.5 465.8403)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="408" xlink:href="3E73220C.png"  transform="matrix(8.593750e-02 0 0 8.593750e-02 992.5 455.3198)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="319" xlink:href="3E73220F.png"  transform="matrix(0.1035 0 0 0.1035 1019.5 502.8403)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="408" xlink:href="3E73220D.png"  transform="matrix(8.593750e-02 0 0 8.593750e-02 880.5 511.3197)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st14" d="M960.1,629.3"/>
+	   <path class="st15" d="M958.7,598.7"/>
+   </g>
+   <path class="st15" d="M975.4,1079.5"/>
+   </svg>
+   
+   <!-- frame 6 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:url(#SVGID_1_);}
+	   .st1{fill:none;stroke:url(#SVGID_00000129189892842882339240000003851842529719464860_);stroke-miterlimit:10;}
+	   .st2{fill:url(#SVGID_00000120537907664021685780000017064375560261402809_);}
+	   .st3{fill:none;stroke:url(#SVGID_00000060746897685016415270000017455233356934413237_);stroke-miterlimit:10;}
+	   .st4{fill:url(#SVGID_00000070103020001414498360000007241161903252526731_);}
+	   .st5{fill:none;stroke:url(#SVGID_00000147913078128711118150000004512854193758931629_);stroke-miterlimit:10;}
+	   .st6{fill:url(#SVGID_00000173125591569516778420000011821451332489365149_);}
+	   .st7{fill:none;stroke:url(#SVGID_00000168099130301427881580000017418432712580226977_);stroke-miterlimit:10;}
+	   .st8{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+	   .st9{fill:none;stroke:#000000;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="677.9429" x2="945.7655" y2="677.9429">
+		   <stop  offset="0" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+		   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+		   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+		   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+		   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+		   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+		   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+		   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+		   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+		   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+		   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+		   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+		   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+		   <stop  offset="0.9425" style="stop-color:#737373"/>
+		   <stop  offset="1" style="stop-color:#595959"/>
+	   </linearGradient>
+	   <path class="st0" d="M945.8,677.9"/>
+	   
+		   <linearGradient id="SVGID_00000013887025020851227020000013832601992509365133_" gradientUnits="userSpaceOnUse" x1="945.7655" y1="677.9429" x2="945.7655" y2="677.9429">
+		   <stop  offset="0" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+		   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+		   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+		   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+		   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+		   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+		   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+		   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+		   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+		   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+		   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+		   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+		   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+		   <stop  offset="0.9425" style="stop-color:#737373"/>
+		   <stop  offset="1" style="stop-color:#595959"/>
+	   </linearGradient>
+	   <path style="fill:none;stroke:url(#SVGID_00000013887025020851227020000013832601992509365133_);stroke-miterlimit:10;" d="
+		   M945.8,677.9"/>
+   </g>
+   <g>
+	   
+		   <linearGradient id="SVGID_00000140727811986350883180000016275879230022412715_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="678.0597" x2="974.5247" y2="678.0597">
+		   <stop  offset="0" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+		   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+		   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+		   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+		   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+		   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+		   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+		   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+		   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+		   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+		   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+		   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+		   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+		   <stop  offset="0.9425" style="stop-color:#737373"/>
+		   <stop  offset="1" style="stop-color:#595959"/>
+	   </linearGradient>
+	   <path style="fill:url(#SVGID_00000140727811986350883180000016275879230022412715_);" d="M974.5,678.1"/>
+	   
+		   <linearGradient id="SVGID_00000083783814452980913960000012314837839137223358_" gradientUnits="userSpaceOnUse" x1="974.5247" y1="678.0597" x2="974.5247" y2="678.0597">
+		   <stop  offset="0" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.1297" style="stop-color:#FDFDFD"/>
+		   <stop  offset="0.1764" style="stop-color:#F6F6F6"/>
+		   <stop  offset="0.2096" style="stop-color:#EBEBEB"/>
+		   <stop  offset="0.2363" style="stop-color:#DADADA"/>
+		   <stop  offset="0.2374" style="stop-color:#D9D9D9"/>
+		   <stop  offset="0.4259" style="stop-color:#D7D7D7"/>
+		   <stop  offset="0.5122" style="stop-color:#CFCFCF"/>
+		   <stop  offset="0.5775" style="stop-color:#C3C3C3"/>
+		   <stop  offset="0.6322" style="stop-color:#B1B1B1"/>
+		   <stop  offset="0.6341" style="stop-color:#B0B0B0"/>
+		   <stop  offset="0.716" style="stop-color:#ACACAC"/>
+		   <stop  offset="0.7933" style="stop-color:#A1A1A1"/>
+		   <stop  offset="0.8687" style="stop-color:#8E8E8E"/>
+		   <stop  offset="0.9425" style="stop-color:#737373"/>
+		   <stop  offset="1" style="stop-color:#595959"/>
+	   </linearGradient>
+	   <path style="fill:none;stroke:url(#SVGID_00000083783814452980913960000012314837839137223358_);stroke-miterlimit:10;" d="
+		   M974.5,678.1"/>
+   </g>
+   <g>
+	   
+		   <linearGradient id="SVGID_00000181783152529194197790000009397718105090379197_" gradientUnits="userSpaceOnUse" x1="960.491" y1="402.7049" x2="960.491" y2="402.7049">
+		   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+		   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+		   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+		   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+		   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+		   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+		   <stop  offset="0.6583" style="stop-color:#939393"/>
+		   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+		   <stop  offset="0.8186" style="stop-color:#676767"/>
+		   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+		   <stop  offset="1" style="stop-color:#595959"/>
+	   </linearGradient>
+	   <path style="fill:url(#SVGID_00000181783152529194197790000009397718105090379197_);" d="M960.5,402.7"/>
+	   
+		   <linearGradient id="SVGID_00000138552038135132093780000005061782605630276264_" gradientUnits="userSpaceOnUse" x1="960.491" y1="402.7049" x2="960.491" y2="402.7049">
+		   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+		   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+		   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+		   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+		   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+		   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+		   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+		   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+		   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+		   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+		   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+		   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+		   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+		   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+		   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+		   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+		   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+		   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+		   <stop  offset="0.9919" style="stop-color:#757575"/>
+		   <stop  offset="1" style="stop-color:#616161"/>
+	   </linearGradient>
+	   <path style="fill:none;stroke:url(#SVGID_00000138552038135132093780000005061782605630276264_);stroke-miterlimit:10;" d="
+		   M960.5,402.7"/>
+   </g>
+   <g>
+	   
+		   <linearGradient id="SVGID_00000178906219911019315730000007244838519668782264_" gradientUnits="userSpaceOnUse" x1="960.491" y1="402.7049" x2="960.491" y2="402.7049">
+		   <stop  offset="5.307262e-02" style="stop-color:#A1A1A1"/>
+		   <stop  offset="0.2555" style="stop-color:#E6E6E6"/>
+		   <stop  offset="0.3268" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.4458" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.4637" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.4889" style="stop-color:#F6F6F6"/>
+		   <stop  offset="0.5297" style="stop-color:#DEDEDE"/>
+		   <stop  offset="0.5808" style="stop-color:#B7B7B7"/>
+		   <stop  offset="0.5894" style="stop-color:#B0B0B0"/>
+		   <stop  offset="0.6583" style="stop-color:#939393"/>
+		   <stop  offset="0.737" style="stop-color:#7A7A7A"/>
+		   <stop  offset="0.8186" style="stop-color:#676767"/>
+		   <stop  offset="0.9041" style="stop-color:#5D5D5D"/>
+		   <stop  offset="1" style="stop-color:#595959"/>
+	   </linearGradient>
+	   <path style="fill:url(#SVGID_00000178906219911019315730000007244838519668782264_);" d="M960.5,402.7"/>
+	   
+		   <linearGradient id="SVGID_00000041269110291299338450000011249015801545114522_" gradientUnits="userSpaceOnUse" x1="960.491" y1="402.7049" x2="960.491" y2="402.7049">
+		   <stop  offset="0.3408" style="stop-color:#D6D6D6"/>
+		   <stop  offset="0.4445" style="stop-color:#D8D8D8"/>
+		   <stop  offset="0.4818" style="stop-color:#DFDFDF"/>
+		   <stop  offset="0.5083" style="stop-color:#EAEAEA"/>
+		   <stop  offset="0.5297" style="stop-color:#FBFBFB"/>
+		   <stop  offset="0.5335" style="stop-color:#FFFFFF"/>
+		   <stop  offset="0.6262" style="stop-color:#FDFDFD"/>
+		   <stop  offset="0.6611" style="stop-color:#F6F6F6"/>
+		   <stop  offset="0.6861" style="stop-color:#EAEAEA"/>
+		   <stop  offset="0.7063" style="stop-color:#D9D9D9"/>
+		   <stop  offset="0.7067" style="stop-color:#D9D9D9"/>
+		   <stop  offset="0.7643" style="stop-color:#D6D6D6"/>
+		   <stop  offset="0.8031" style="stop-color:#CDCDCD"/>
+		   <stop  offset="0.8363" style="stop-color:#BEBEBE"/>
+		   <stop  offset="0.8575" style="stop-color:#B0B0B0"/>
+		   <stop  offset="0.9247" style="stop-color:#AEAEAE"/>
+		   <stop  offset="0.9489" style="stop-color:#A7A7A7"/>
+		   <stop  offset="0.9662" style="stop-color:#9C9C9C"/>
+		   <stop  offset="0.9801" style="stop-color:#8B8B8B"/>
+		   <stop  offset="0.9919" style="stop-color:#757575"/>
+		   <stop  offset="1" style="stop-color:#616161"/>
+	   </linearGradient>
+	   <path style="fill:none;stroke:url(#SVGID_00000041269110291299338450000011249015801545114522_);stroke-miterlimit:10;" d="
+		   M960.5,402.7"/>
+   </g>
+   <path class="st8" d="M960.1,625.4"/>
+   <path class="st8" d="M974.5,1079.5"/>
+   <g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="266" xlink:href="F881764F.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 510.1076)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="252" xlink:href="F881764D.png"  transform="matrix(0.5 0 0 0.5 832 466.9404)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="310" xlink:href="F8817653.png"  transform="matrix(0.1035 0 0 0.1035 842.5 466.3954)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="427" xlink:href="F8817655.png"  transform="matrix(8.203125e-02 0 0 8.203125e-02 983.5 450.4267)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="310" xlink:href="F8817657.png"  transform="matrix(0.1035 0 0 0.1035 1022.5 496.3954)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="427" xlink:href="F8817654.png"  transform="matrix(8.203125e-02 0 0 8.203125e-02 890.5 507.4267)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st8" d="M998.6,458.8"/>
+	   <path class="st8" d="M887.6,517.8"/>
+	   <path class="st8" d="M1016.6,459.8"/>
+	   <path class="st8" d="M905.6,521.8"/>
+	   <path class="st8" d="M870.6,479.8"/>
+	   <path class="st8" d="M1064.6,508.8"/>
+	   <path class="st8" d="M896.6,473.8"/>
+	   <path class="st8" d="M1073.6,502.8"/>
+	   <path class="st8" d="M967.6,591.3"/>
+	   <path class="st9" d="M960.2,593.1"/>
+	   <path class="st9" d="M972.1,1078.8"/>
+   </g>
+   </svg>
+   
+   
+   
+   <!-- frame 7 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+   </style>
+   <path class="st0" d="M959.5,1080.5"/>
+   <g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="266" xlink:href="B28FCA96.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 509.49)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="246" xlink:href="B28FCA9A.png"  transform="matrix(0.5 0 0 0.5 832 467.8226)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="294" xlink:href="B28FCA9D.png"  transform="matrix(0.1055 0 0 0.1055 838 469.3188)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="448" xlink:href="B28FCA9E.png"  transform="matrix(7.812500e-02 0 0 7.812500e-02 986.5 451.8227)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="294" xlink:href="B28FCA9C.png"  transform="matrix(0.1055 0 0 0.1055 1024 494.3188)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="448" xlink:href="B28FCA9B.png"  transform="matrix(7.812500e-02 0 0 7.812500e-02 901.5 505.8226)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st1" d="M959.6,624"/>
+	   <path class="st0" d="M1023.6,446"/>
+	   <path class="st0" d="M900.6,516"/>
+	   <path class="st0" d="M851.6,477"/>
+	   <path class="st0" d="M1067.6,505"/>
+	   <path class="st0" d="M959.6,589"/>
+	   <path class="st1" d="M959,590.6"/>
+   </g>
+   <path class="st1" d="M958.9,1079"/>
+   </svg>
+   
+   
+   <!-- frame 8 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="266" xlink:href="6C9E1EE1.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 509.49)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="252" xlink:href="6C9E1EE3.png"  transform="matrix(0.5 0 0 0.5 832 466.8226)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="285" xlink:href="6C9E1EE6.png"  transform="matrix(0.1055 0 0 0.1055 835 474.2934)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="459" xlink:href="6C9E1EE7.png"  transform="matrix(7.421875e-02 0 0 7.421875e-02 978.5 449.7895)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="275" xlink:href="6C9E1EE2.png"  transform="matrix(0.1055 0 0 0.1055 1026 495.8207)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="459" xlink:href="6C9E1EED.png"  transform="matrix(7.421875e-02 0 0 7.421875e-02 909.5 509.7894)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st0" d="M959.6,624.5"/>
+	   <path class="st1" d="M1023.6,446.5"/>
+	   <path class="st1" d="M900.6,516.5"/>
+	   <path class="st1" d="M851.6,477.5"/>
+	   <path class="st1" d="M1067.6,505.5"/>
+	   <path class="st1" d="M959.6,589.5"/>
+	   <path class="st1" d="M976.6,470.3"/>
+	   <path class="st1" d="M908.6,516.3"/>
+	   <path class="st1" d="M861.6,481.3"/>
+	   <path class="st1" d="M1072.6,501.3"/>
+	   <path class="st0" d="M959,593.4"/>
+   </g>
+   <path class="st0" d="M958.9,1079.6"/>
+   </svg>
+   
+   
+   
+   <!-- frame 9 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="266" xlink:href="26AC7328.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 509.49)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="252" xlink:href="26AC7329.png"  transform="matrix(0.5 0 0 0.5 832 466.8226)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="285" xlink:href="26AC732F.png"  transform="matrix(0.1055 0 0 0.1055 834 474.2934)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="459" xlink:href="26AC732A.png"  transform="matrix(7.421875e-02 0 0 7.421875e-02 978.5 449.7895)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="275" xlink:href="26AC732B.png"  transform="matrix(0.1055 0 0 0.1055 1027 494.8207)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="459" xlink:href="26AC7326.png"  transform="matrix(7.421875e-02 0 0 7.421875e-02 909.5 509.7894)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st0" d="M959.6,624.5"/>
+	   <path class="st1" d="M1023.6,446.5"/>
+	   <path class="st1" d="M900.6,516.5"/>
+	   <path class="st1" d="M851.6,477.5"/>
+	   <path class="st1" d="M1067.6,505.5"/>
+	   <path class="st1" d="M959.6,589.5"/>
+	   <path class="st1" d="M976.6,470.3"/>
+	   <path class="st1" d="M908.6,516.3"/>
+	   <path class="st1" d="M861.6,481.3"/>
+	   <path class="st1" d="M1072.6,501.3"/>
+	   <path class="st0" d="M959,593.5"/>
+   </g>
+   <path class="st0" d="M958.9,1079.2"/>
+   </svg>
+   
+   
+   <!-- frame 10 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="270" xlink:href="68FAEE1A.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 508.615)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="250" xlink:href="68FAEE1E.png"  transform="matrix(0.5 0 0 0.5 832 467.3226)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="266" xlink:href="68FAEE19.png"  transform="matrix(0.1055 0 0 0.1055 833 477.2953)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="483" xlink:href="68FAEE1B.png"  transform="matrix(6.835938e-02 0 0 6.835938e-02 980 450.3139)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="266" xlink:href="68FAEE18.png"  transform="matrix(0.1055 0 0 0.1055 1029 492.2953)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="483" xlink:href="68FAEE26.png"  transform="matrix(6.835938e-02 0 0 6.835938e-02 917 511.3138)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st0" d="M959.6,624.5"/>
+	   <path class="st1" d="M1023.6,446.5"/>
+	   <path class="st1" d="M900.6,516.5"/>
+	   <path class="st1" d="M851.6,477.5"/>
+	   <path class="st1" d="M1067.6,505.5"/>
+	   <path class="st1" d="M959.6,589.5"/>
+	   <path class="st1" d="M976.6,470.3"/>
+	   <path class="st1" d="M908.6,516.3"/>
+	   <path class="st1" d="M861.6,481.3"/>
+	   <path class="st1" d="M1072.6,501.3"/>
+	   <path class="st1" d="M988.6,462.8"/>
+	   <path class="st1" d="M915.6,514.8"/>
+	   <path class="st1" d="M837.6,481.8"/>
+	   <path class="st1" d="M1076.6,497.8"/>
+	   <path class="st0" d="M952.4,592.6"/>
+   </g>
+   <path class="st0" d="M952.3,1079.3"/>
+   </svg>
+   
+   
+   <!-- frame 11 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="254" xlink:href="23094265.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 512.115)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="248" xlink:href="23094267.png"  transform="matrix(0.502 0 0 0.502 831.5 468.0804)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="256" xlink:href="23094262.png"  transform="matrix(0.1055 0 0 0.1055 831 481.3227)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="497" xlink:href="23094263.png"  transform="matrix(6.445312e-02 0 0 6.445312e-02 973 449.3061)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="247" xlink:href="2309426D.png"  transform="matrix(0.1055 0 0 0.1055 1030 491.7973)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="497" xlink:href="2309426F.png"  transform="matrix(6.445312e-02 0 0 6.445312e-02 923 512.306)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st0" d="M959.6,625"/>
+	   <path class="st1" d="M1023.6,447"/>
+	   <path class="st1" d="M900.6,517"/>
+	   <path class="st1" d="M851.6,478"/>
+	   <path class="st1" d="M1067.6,506"/>
+	   <path class="st1" d="M959.6,590"/>
+	   <path class="st1" d="M976.6,470.8"/>
+	   <path class="st1" d="M908.6,516.8"/>
+	   <path class="st1" d="M861.6,481.8"/>
+	   <path class="st1" d="M1072.6,501.8"/>
+	   <path class="st1" d="M988.6,463.3"/>
+	   <path class="st1" d="M915.6,515.3"/>
+	   <path class="st1" d="M837.6,482.3"/>
+	   <path class="st1" d="M1076.6,498.3"/>
+	   <path class="st1" d="M988.6,456.3"/>
+	   <path class="st1" d="M922.6,512.3"/>
+	   <path class="st1" d="M836.6,486.3"/>
+	   <path class="st1" d="M1079.6,494.3"/>
+	   <path class="st0" d="M955.7,593.2"/>
+   </g>
+   <path class="st0" d="M955.6,1079.4"/>
+   </svg>
+   
+   
+   <!-- frame 12 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="263" xlink:href="DD1796AC.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 510.1462)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="252" xlink:href="DD1796AD.png"  transform="matrix(0.5 0 0 0.5 832 467.3226)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="242" xlink:href="DD1796AB.png"  transform="matrix(0.1035 0 0 0.1035 832.5 490.2973)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="512" xlink:href="DD1796B4.png"  transform="matrix(5.859375e-02 0 0 5.859375e-02 966.5 449.3227)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="242" xlink:href="DD1796B7.png"  transform="matrix(0.1035 0 0 0.1035 1032.5 492.2973)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="512" xlink:href="DD1796B5.png"  transform="matrix(5.859375e-02 0 0 5.859375e-02 931.5 515.3226)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st0" d="M959.6,625"/>
+	   <path class="st1" d="M1023.6,447"/>
+	   <path class="st1" d="M900.6,517"/>
+	   <path class="st1" d="M851.6,478"/>
+	   <path class="st1" d="M1067.6,506"/>
+	   <path class="st1" d="M959.6,590"/>
+	   <path class="st1" d="M976.6,470.8"/>
+	   <path class="st1" d="M908.6,516.8"/>
+	   <path class="st1" d="M861.6,481.8"/>
+	   <path class="st1" d="M1072.6,501.8"/>
+	   <path class="st1" d="M988.6,463.3"/>
+	   <path class="st1" d="M915.6,515.3"/>
+	   <path class="st1" d="M837.6,482.3"/>
+	   <path class="st1" d="M1076.6,498.3"/>
+	   <path class="st1" d="M988.6,456.3"/>
+	   <path class="st1" d="M922.6,512.3"/>
+	   <path class="st1" d="M836.6,486.3"/>
+	   <path class="st1" d="M1079.6,494.3"/>
+	   <path class="st1" d="M846.3,488.8"/>
+	   <path class="st1" d="M1079.3,488.8"/>
+	   <path class="st1" d="M988.3,448.8"/>
+	   <path class="st1" d="M930.3,511.8"/>
+	   <path class="st0" d="M959.5,593.7"/>
+   </g>
+   <path class="st0" d="M959.7,1079.4"/>
+   </svg>
+   
+   
+   
+   <!-- frame 13 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="266" xlink:href="9725EAF7.png"  transform="matrix(0.4336 0 0 0.4336 849.0877 510.0095)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="252" xlink:href="9725EAF5.png"  transform="matrix(0.5 0 0 0.5 832 467.3226)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="236" xlink:href="9725EAFB.png"  transform="matrix(9.765625e-02 0 0 9.765625e-02 832 491.2992)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="399" height="512" xlink:href="9725EAFD.png"  transform="matrix(5.273438e-02 0 0 5.273438e-02 955.9795 452.8227)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="236" xlink:href="9725EAFF.png"  transform="matrix(9.765625e-02 0 0 9.765625e-02 1037 487.2992)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="418" height="512" xlink:href="9725EAFC.png"  transform="matrix(5.273438e-02 0 0 5.273438e-02 954.4785 518.8226)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st0" d="M959.6,625"/>
+	   <path class="st1" d="M1023.6,447"/>
+	   <path class="st1" d="M900.6,517"/>
+	   <path class="st1" d="M851.6,478"/>
+	   <path class="st1" d="M1067.6,506"/>
+	   <path class="st1" d="M959.6,590"/>
+	   <path class="st1" d="M976.6,470.8"/>
+	   <path class="st1" d="M908.6,516.8"/>
+	   <path class="st1" d="M861.6,481.8"/>
+	   <path class="st1" d="M1072.6,501.8"/>
+	   <path class="st1" d="M988.6,463.3"/>
+	   <path class="st1" d="M915.6,515.3"/>
+	   <path class="st1" d="M837.6,482.3"/>
+	   <path class="st1" d="M1076.6,498.3"/>
+	   <path class="st1" d="M988.6,456.3"/>
+	   <path class="st1" d="M922.6,512.3"/>
+	   <path class="st1" d="M836.6,486.3"/>
+	   <path class="st1" d="M1079.6,494.3"/>
+	   <path class="st1" d="M846.3,488.8"/>
+	   <path class="st1" d="M1079.3,488.8"/>
+	   <path class="st1" d="M988.3,448.8"/>
+	   <path class="st1" d="M930.3,511.8"/>
+	   <path class="st0" d="M960.1,593.1"/>
+   </g>
+   <path class="st0" d="M960,1078.8"/>
+   </svg>
+   
+   
+   
+   <!-- frame 14 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <path class="st0" d="M959.9,1078"/>
+   <g>
+	   <path class="st0" d="M960,592.2"/>
+	   <g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="260" xlink:href="51343F3E.png"  transform="matrix(0.4355 0 0 0.4355 848.5877 511.0564)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="248" xlink:href="51343F42.png"  transform="matrix(0.5 0 0 0.5 832 468.3226)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="262" xlink:href="51343F45.png"  transform="matrix(9.960938e-02 0 0 9.960938e-02 831.5 485.7738)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="337" height="512" xlink:href="51343F46.png"  transform="matrix(6.835938e-02 0 0 6.835938e-02 949.9814 448.8227)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="262" xlink:href="51343F44.png"  transform="matrix(9.960938e-02 0 0 9.960938e-02 1036.5 480.7738)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="352" height="512" xlink:href="51343F43.png"  transform="matrix(6.835938e-02 0 0 6.835938e-02 959.4688 508.8226)">
+				   </image>
+			   </g>
+		   </g>
+		   <path class="st0" d="M959.6,625"/>
+		   <path class="st1" d="M1023.6,447"/>
+		   <path class="st1" d="M900.6,517"/>
+		   <path class="st1" d="M851.6,478"/>
+		   <path class="st1" d="M1067.6,506"/>
+		   <path class="st1" d="M959.6,590"/>
+		   <path class="st1" d="M976.6,470.8"/>
+		   <path class="st1" d="M908.6,516.8"/>
+		   <path class="st1" d="M861.6,481.8"/>
+		   <path class="st1" d="M1072.6,501.8"/>
+		   <path class="st1" d="M988.6,463.3"/>
+		   <path class="st1" d="M915.6,515.3"/>
+		   <path class="st1" d="M837.6,482.3"/>
+		   <path class="st1" d="M1076.6,498.3"/>
+		   <path class="st1" d="M988.6,456.3"/>
+		   <path class="st1" d="M922.6,512.3"/>
+		   <path class="st1" d="M836.6,486.3"/>
+		   <path class="st1" d="M1079.6,494.3"/>
+		   <path class="st1" d="M846.3,488.8"/>
+		   <path class="st1" d="M1079.3,488.8"/>
+		   <path class="st1" d="M988.3,448.8"/>
+		   <path class="st1" d="M930.3,511.8"/>
+		   <path class="st1" d="M951.6,458.8"/>
+		   <path class="st1" d="M961.6,523.8"/>
+		   <path class="st1" d="M851.6,481.8"/>
+		   <path class="st1" d="M1085.6,477.8"/>
+	   </g>
+   </g>
+   </svg>
+   
+   <!-- frame 15 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="263" xlink:href="B429389.png"  transform="matrix(0.4375 0 0 0.4375 847.9142 510.1462)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="250" xlink:href="B42938B.png"  transform="matrix(0.5 0 0 0.5 831.8265 467.8226)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="276" xlink:href="B42938E.png"  transform="matrix(0.1016 0 0 0.1016 830.8266 486.807)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="381" height="512" xlink:href="B42938F.png"  transform="matrix(6.835938e-02 0 0 6.835938e-02 945.3041 448.8227)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="276" xlink:href="B42938A.png"  transform="matrix(0.1016 0 0 0.1016 1034.8264 476.807)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="370" height="512" xlink:href="B429385.png"  transform="matrix(7.031250e-02 0 0 7.031250e-02 965.3185 508.3226)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st0" d="M959.4,625"/>
+	   <path class="st1" d="M1023.4,447"/>
+	   <path class="st1" d="M900.4,517"/>
+	   <path class="st1" d="M851.4,478"/>
+	   <path class="st1" d="M1067.4,506"/>
+	   <path class="st1" d="M959.4,590"/>
+	   <path class="st1" d="M976.4,470.8"/>
+	   <path class="st1" d="M908.4,516.8"/>
+	   <path class="st1" d="M861.4,481.8"/>
+	   <path class="st1" d="M1072.4,501.8"/>
+	   <path class="st1" d="M988.4,463.3"/>
+	   <path class="st1" d="M915.4,515.3"/>
+	   <path class="st1" d="M837.4,482.3"/>
+	   <path class="st1" d="M1076.4,498.3"/>
+	   <path class="st1" d="M988.4,456.3"/>
+	   <path class="st1" d="M922.4,512.3"/>
+	   <path class="st1" d="M836.4,486.3"/>
+	   <path class="st1" d="M1079.4,494.3"/>
+	   <path class="st1" d="M846.2,488.8"/>
+	   <path class="st1" d="M1079.2,488.8"/>
+	   <path class="st1" d="M988.2,448.8"/>
+	   <path class="st1" d="M930.2,511.8"/>
+	   <path class="st1" d="M951.4,458.8"/>
+	   <path class="st1" d="M961.4,523.8"/>
+	   <path class="st1" d="M851.4,481.8"/>
+	   <path class="st1" d="M1085.4,477.8"/>
+	   <path class="st1" d="M948.2,451.8"/>
+	   <path class="st1" d="M971.2,523.8"/>
+	   <path class="st1" d="M1087.2,481.8"/>
+   </g>
+   </svg>
+   
+   
+   <!-- frame 16 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="266" xlink:href="C550E7D0.png"  transform="matrix(0.4375 0 0 0.4375 847.9142 509.49)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="252" xlink:href="C550E7D1.png"  transform="matrix(0.502 0 0 0.502 831.3265 467.0765)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="281" xlink:href="C550E7D7.png"  transform="matrix(0.1035 0 0 0.1035 831.3266 488.2787)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="413" height="512" xlink:href="C550E7D2.png"  transform="matrix(7.031250e-02 0 0 7.031250e-02 935.8071 447.3227)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="281" xlink:href="C550E7D3.png"  transform="matrix(0.1035 0 0 0.1035 1033.3264 473.2787)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="413" height="512" xlink:href="C550E7DE.png"  transform="matrix(7.031250e-02 0 0 7.031250e-02 968.8068 509.3226)">
+				   </image>
+			   </g>
+		   </g>
+		   <path class="st0" d="M959.4,625"/>
+		   <path class="st1" d="M1023.4,447"/>
+		   <path class="st1" d="M900.4,517"/>
+		   <path class="st1" d="M851.4,478"/>
+		   <path class="st1" d="M1067.4,506"/>
+		   <path class="st1" d="M959.4,590"/>
+		   <path class="st1" d="M976.4,470.8"/>
+		   <path class="st1" d="M908.4,516.8"/>
+		   <path class="st1" d="M861.4,481.8"/>
+		   <path class="st1" d="M1072.4,501.8"/>
+		   <path class="st1" d="M988.4,463.3"/>
+		   <path class="st1" d="M915.4,515.3"/>
+		   <path class="st1" d="M837.4,482.3"/>
+		   <path class="st1" d="M1076.4,498.3"/>
+		   <path class="st1" d="M988.4,456.3"/>
+		   <path class="st1" d="M922.4,512.3"/>
+		   <path class="st1" d="M836.4,486.3"/>
+		   <path class="st1" d="M1079.4,494.3"/>
+		   <path class="st1" d="M846.2,488.8"/>
+		   <path class="st1" d="M1079.2,488.8"/>
+		   <path class="st1" d="M988.2,448.8"/>
+		   <path class="st1" d="M930.2,511.8"/>
+		   <path class="st1" d="M951.4,458.8"/>
+		   <path class="st1" d="M961.4,523.8"/>
+		   <path class="st1" d="M851.4,481.8"/>
+		   <path class="st1" d="M1085.4,477.8"/>
+		   <path class="st1" d="M948.2,451.8"/>
+		   <path class="st1" d="M971.2,523.8"/>
+		   <path class="st1" d="M1087.2,481.8"/>
+		   <path class="st1" d="M940.5,458.8"/>
+		   <path class="st1" d="M976.5,525.8"/>
+		   <path class="st1" d="M1086.5,497.8"/>
+	   </g>
+   </g>
+   </svg>
+   
+   <!-- frame 17 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <path class="st0" d="M959.9,1079"/>
+   <g>
+	   <path class="st0" d="M960.5,593.3"/>
+	   <g>
+		   <path class="st0" d="M973.8,625"/>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="268" xlink:href="7F5F3C1B.png"  transform="matrix(0.4375 0 0 0.4375 847.9142 509.0525)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="254" xlink:href="7F5F3C19.png"  transform="matrix(0.5 0 0 0.5 831.8265 466.8226)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="281" xlink:href="7F5F3C1F.png"  transform="matrix(0.1035 0 0 0.1035 832.3266 490.2787)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="469" height="512" xlink:href="7F5F3C18.png"  transform="matrix(6.835938e-02 0 0 6.835938e-02 925.2963 447.8227)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="281" xlink:href="7F5F3C16.png"  transform="matrix(0.1035 0 0 0.1035 1029.3264 471.2787)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="456" height="512" xlink:href="7F5F3C17.png"  transform="matrix(7.031250e-02 0 0 7.031250e-02 973.2951 509.3226)">
+				   </image>
+			   </g>
+		   </g>
+		   <path class="st1" d="M1023.4,447"/>
+		   <path class="st1" d="M900.4,517"/>
+		   <path class="st1" d="M851.4,478"/>
+		   <path class="st1" d="M1067.4,506"/>
+		   <path class="st1" d="M959.4,590"/>
+		   <path class="st1" d="M976.4,470.8"/>
+		   <path class="st1" d="M908.4,516.8"/>
+		   <path class="st1" d="M861.4,481.8"/>
+		   <path class="st1" d="M1072.4,501.8"/>
+		   <path class="st1" d="M988.4,463.3"/>
+		   <path class="st1" d="M915.4,515.3"/>
+		   <path class="st1" d="M837.4,482.3"/>
+		   <path class="st1" d="M1076.4,498.3"/>
+		   <path class="st1" d="M988.4,456.3"/>
+		   <path class="st1" d="M922.4,512.3"/>
+		   <path class="st1" d="M836.4,486.3"/>
+		   <path class="st1" d="M1079.4,494.3"/>
+		   <path class="st1" d="M846.2,488.8"/>
+		   <path class="st1" d="M1079.2,488.8"/>
+		   <path class="st1" d="M988.2,448.8"/>
+		   <path class="st1" d="M930.2,511.8"/>
+		   <path class="st1" d="M951.4,458.8"/>
+		   <path class="st1" d="M961.4,523.8"/>
+		   <path class="st1" d="M851.4,481.8"/>
+		   <path class="st1" d="M1085.4,477.8"/>
+		   <path class="st1" d="M948.2,451.8"/>
+		   <path class="st1" d="M971.2,523.8"/>
+		   <path class="st1" d="M1087.2,481.8"/>
+		   <path class="st1" d="M940.5,458.8"/>
+		   <path class="st1" d="M976.5,525.8"/>
+		   <path class="st1" d="M1086.5,497.8"/>
+		   <path class="st1" d="M928.1,451.8"/>
+		   <path class="st1" d="M986.1,525.8"/>
+	   </g>
+   </g>
+   </svg>
+   
+   
+   <!-- frame 18 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px" x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <path class="st0" d="M959.9,1080"/>
+   <g>
+	   <path class="st0" d="M959.1,594.3"/>
+	   <g>
+		   <path class="st0" d="M973.9,625"/>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="266" xlink:href="396D9062.png"  transform="matrix(0.4375 0 0 0.4375 848.0877 509.49)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="252" xlink:href="396D9066.png"  transform="matrix(0.5 0 0 0.5 832 467.3226)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="294" xlink:href="396D9061.png"  transform="matrix(0.1055 0 0 0.1055 835 491.3188)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="485" height="512" xlink:href="396D9063.png"  transform="matrix(7.226562e-02 0 0 7.226562e-02 923.9756 448.8227)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="512" height="285" xlink:href="396D9060.png"  transform="matrix(0.1055 0 0 0.1055 1027 468.7934)">
+				   </image>
+			   </g>
+		   </g>
+		   <g>
+			   <g>
+				   
+					   <image style="overflow:visible;" width="484" height="512" xlink:href="396D906E.png"  transform="matrix(7.031250e-02 0 0 7.031250e-02 980.4844 508.3226)">
+				   </image>
+			   </g>
+		   </g>
+		   <path class="st1" d="M1023.6,447"/>
+		   <path class="st1" d="M900.6,517"/>
+		   <path class="st1" d="M851.6,478"/>
+		   <path class="st1" d="M1067.6,506"/>
+		   <path class="st1" d="M959.6,590"/>
+		   <path class="st1" d="M976.6,470.8"/>
+		   <path class="st1" d="M908.6,516.8"/>
+		   <path class="st1" d="M861.6,481.8"/>
+		   <path class="st1" d="M1072.6,501.8"/>
+		   <path class="st1" d="M988.6,463.3"/>
+		   <path class="st1" d="M915.6,515.3"/>
+		   <path class="st1" d="M837.6,482.3"/>
+		   <path class="st1" d="M1076.6,498.3"/>
+		   <path class="st1" d="M988.6,456.3"/>
+		   <path class="st1" d="M922.6,512.3"/>
+		   <path class="st1" d="M836.6,486.3"/>
+		   <path class="st1" d="M1079.6,494.3"/>
+		   <path class="st1" d="M846.3,488.8"/>
+		   <path class="st1" d="M1079.3,488.8"/>
+		   <path class="st1" d="M988.3,448.8"/>
+		   <path class="st1" d="M930.3,511.8"/>
+		   <path class="st1" d="M951.6,458.8"/>
+		   <path class="st1" d="M961.6,523.8"/>
+		   <path class="st1" d="M851.6,481.8"/>
+		   <path class="st1" d="M948.3,451.8"/>
+		   <path class="st1" d="M971.3,523.8"/>
+		   <path class="st1" d="M940.7,458.8"/>
+		   <path class="st1" d="M976.7,525.8"/>
+		   <path class="st1" d="M1086.7,497.8"/>
+		   <path class="st1" d="M928.3,451.8"/>
+		   <path class="st1" d="M986.3,525.8"/>
+		   <path class="st1" d="M923.7,448.8"/>
+		   <path class="st1" d="M995.7,523.8"/>
+		   <path class="st1" d="M840.7,502.8"/>
+	   </g>
+   </g>
+   </svg>
+   
+   
+   <!-- frame 19 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <path class="st0" d="M960,1079"/>
+   <g>
+	   <path class="st0" d="M960.2,593.3"/>
+	   <path class="st0" d="M973.9,625"/>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="256" xlink:href="F37BE4AD.png"  transform="matrix(0.4375 0 0 0.4375 848.0535 511.6775)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="252" xlink:href="F37BE4AF.png"  transform="matrix(0.5 0 0 0.5 831.9658 467.3226)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="285" xlink:href="F37BE4AA.png"  transform="matrix(0.1055 0 0 0.1055 837.9658 493.7934)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="499" xlink:href="F37BE4AB.png"  transform="matrix(7.226562e-02 0 0 7.226562e-02 910.9658 449.2924)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="285" xlink:href="F37BE4B5.png"  transform="matrix(0.1055 0 0 0.1055 1028.9657 470.7934)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="499" xlink:href="F37BE4B7.png"  transform="matrix(7.226562e-02 0 0 7.226562e-02 981.9658 507.2923)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st1" d="M1023.6,447"/>
+	   <path class="st1" d="M900.6,517"/>
+	   <path class="st1" d="M851.6,478"/>
+	   <path class="st1" d="M1067.6,506"/>
+	   <path class="st1" d="M959.6,590"/>
+	   <path class="st1" d="M976.6,470.8"/>
+	   <path class="st1" d="M908.6,516.8"/>
+	   <path class="st1" d="M861.6,481.8"/>
+	   <path class="st1" d="M1072.6,501.8"/>
+	   <path class="st1" d="M988.6,463.3"/>
+	   <path class="st1" d="M915.6,515.3"/>
+	   <path class="st1" d="M837.6,482.3"/>
+	   <path class="st1" d="M1076.6,498.3"/>
+	   <path class="st1" d="M988.6,456.3"/>
+	   <path class="st1" d="M922.6,512.3"/>
+	   <path class="st1" d="M836.6,486.3"/>
+	   <path class="st1" d="M1079.6,494.3"/>
+	   <path class="st1" d="M846.3,488.8"/>
+	   <path class="st1" d="M1079.3,488.8"/>
+	   <path class="st1" d="M988.3,448.8"/>
+	   <path class="st1" d="M930.3,511.8"/>
+	   <path class="st1" d="M951.6,458.8"/>
+	   <path class="st1" d="M961.6,523.8"/>
+	   <path class="st1" d="M851.6,481.8"/>
+	   <path class="st1" d="M1085.6,477.8"/>
+	   <path class="st1" d="M948.3,451.8"/>
+	   <path class="st1" d="M971.3,523.8"/>
+	   <path class="st1" d="M1087.3,481.8"/>
+	   <path class="st1" d="M940.6,458.8"/>
+	   <path class="st1" d="M976.6,525.8"/>
+	   <path class="st1" d="M1086.6,497.8"/>
+	   <path class="st1" d="M928.3,451.8"/>
+	   <path class="st1" d="M986.3,525.8"/>
+	   <path class="st1" d="M915.7,453.8"/>
+	   <path class="st1" d="M1000.7,523.8"/>
+	   <path class="st1" d="M832.7,505.8"/>
+	   <path class="st1" d="M1082.7,476.8"/>
+   </g>
+   </svg>
+   
+   
+   <!-- frame 20 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <path class="st0" d="M960,1080"/>
+   <g>
+	   <path class="st0" d="M973.9,625"/>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="270" xlink:href="F0B722F3.png"  transform="matrix(0.4375 0 0 0.4375 848.0535 508.615)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="258" xlink:href="F0B722F1.png"  transform="matrix(0.5 0 0 0.5 831.9658 465.8226)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="304" xlink:href="F0B722F7.png"  transform="matrix(0.1055 0 0 0.1055 839.9658 496.7914)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="473" xlink:href="F0B722F0.png"  transform="matrix(7.617188e-02 0 0 7.617188e-02 901.9658 450.308)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="304" xlink:href="F0B722FE.png"  transform="matrix(0.1055 0 0 0.1055 1024.9657 465.7914)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="473" xlink:href="F0B722FF.png"  transform="matrix(7.617188e-02 0 0 7.617188e-02 986.9658 508.3079)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st1" d="M1023.6,447"/>
+	   <path class="st1" d="M900.6,517"/>
+	   <path class="st1" d="M851.6,478"/>
+	   <path class="st1" d="M1067.6,506"/>
+	   <path class="st1" d="M959.6,590"/>
+	   <path class="st1" d="M976.6,470.8"/>
+	   <path class="st1" d="M908.6,516.8"/>
+	   <path class="st1" d="M861.6,481.8"/>
+	   <path class="st1" d="M1072.6,501.8"/>
+	   <path class="st1" d="M988.6,463.3"/>
+	   <path class="st1" d="M915.6,515.3"/>
+	   <path class="st1" d="M837.6,482.3"/>
+	   <path class="st1" d="M1076.6,498.3"/>
+	   <path class="st1" d="M988.6,456.3"/>
+	   <path class="st1" d="M922.6,512.3"/>
+	   <path class="st1" d="M836.6,486.3"/>
+	   <path class="st1" d="M1079.6,494.3"/>
+	   <path class="st1" d="M846.3,488.8"/>
+	   <path class="st1" d="M1079.3,488.8"/>
+	   <path class="st1" d="M988.3,448.8"/>
+	   <path class="st1" d="M930.3,511.8"/>
+	   <path class="st1" d="M951.6,458.8"/>
+	   <path class="st1" d="M961.6,523.8"/>
+	   <path class="st1" d="M851.6,481.8"/>
+	   <path class="st1" d="M1085.6,477.8"/>
+	   <path class="st1" d="M948.3,451.8"/>
+	   <path class="st1" d="M971.3,523.8"/>
+	   <path class="st1" d="M1087.3,481.8"/>
+	   <path class="st1" d="M940.6,458.8"/>
+	   <path class="st1" d="M976.6,525.8"/>
+	   <path class="st1" d="M1086.6,497.8"/>
+	   <path class="st1" d="M928.3,451.8"/>
+	   <path class="st1" d="M986.3,525.8"/>
+	   <path class="st1" d="M915.7,453.8"/>
+	   <path class="st1" d="M1000.7,523.8"/>
+	   <path class="st1" d="M832.7,505.8"/>
+	   <path class="st1" d="M1082.7,476.8"/>
+	   <path class="st0" d="M960.2,594.3"/>
+	   <path class="st1" d="M909.7,456.8"/>
+	   <path class="st1" d="M1007.7,524.8"/>
+   </g>
+   </svg>
+   
+   
+   <!-- frame 21 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <g>
+	   <path class="st0" d="M973.8,625.8"/>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="275" xlink:href="AAC5773A.png"  transform="matrix(0.4375 0 0 0.4375 847.991 508.2228)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="268" xlink:href="AAC5773E.png"  transform="matrix(0.5 0 0 0.5 831.9033 464.0243)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="313" xlink:href="AAC57739.png"  transform="matrix(0.1055 0 0 0.1055 840.9033 498.0184)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="463" xlink:href="AAC5773B.png"  transform="matrix(8.007812e-02 0 0 8.007812e-02 891.9033 449.4862)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="313" xlink:href="AAC57738.png"  transform="matrix(0.1055 0 0 0.1055 1020.9033 464.0184)">
+			   </image>
+		   </g>
+	   </g>
+	   <g>
+		   <g>
+			   
+				   <image style="overflow:visible;" width="512" height="463" xlink:href="AAC57746.png"  transform="matrix(8.007812e-02 0 0 8.007812e-02 987.9033 510.4862)">
+			   </image>
+		   </g>
+	   </g>
+	   <path class="st1" d="M1023.5,447.8"/>
+	   <path class="st1" d="M900.5,517.8"/>
+	   <path class="st1" d="M851.5,478.8"/>
+	   <path class="st1" d="M1067.5,506.8"/>
+	   <path class="st1" d="M959.5,590.8"/>
+	   <path class="st1" d="M976.5,471.5"/>
+	   <path class="st1" d="M908.5,517.5"/>
+	   <path class="st1" d="M861.5,482.5"/>
+	   <path class="st1" d="M1072.5,502.5"/>
+	   <path class="st1" d="M988.5,464"/>
+	   <path class="st1" d="M915.5,516"/>
+	   <path class="st1" d="M837.5,483"/>
+	   <path class="st1" d="M1076.5,499"/>
+	   <path class="st1" d="M988.5,457"/>
+	   <path class="st1" d="M922.5,513"/>
+	   <path class="st1" d="M836.5,487"/>
+	   <path class="st1" d="M1079.5,495"/>
+	   <path class="st1" d="M846.2,489.5"/>
+	   <path class="st1" d="M1079.2,489.5"/>
+	   <path class="st1" d="M988.2,449.5"/>
+	   <path class="st1" d="M930.2,512.5"/>
+	   <path class="st1" d="M951.5,459.5"/>
+	   <path class="st1" d="M961.5,524.5"/>
+	   <path class="st1" d="M851.5,482.5"/>
+	   <path class="st1" d="M1085.5,478.5"/>
+	   <path class="st1" d="M948.2,452.5"/>
+	   <path class="st1" d="M971.2,524.5"/>
+	   <path class="st1" d="M1087.2,482.5"/>
+	   <path class="st1" d="M940.6,459.5"/>
+	   <path class="st1" d="M976.6,526.5"/>
+	   <path class="st1" d="M1086.6,498.5"/>
+	   <path class="st1" d="M928.2,452.5"/>
+	   <path class="st1" d="M986.2,526.5"/>
+	   <path class="st1" d="M915.6,454.5"/>
+	   <path class="st1" d="M1000.6,524.5"/>
+	   <path class="st1" d="M832.6,506.5"/>
+	   <path class="st1" d="M1082.6,477.5"/>
+	   <path class="st0" d="M960.1,595"/>
+	   <path class="st1" d="M909.6,457.5"/>
+	   <path class="st1" d="M1007.6,525.5"/>
+	   <path class="st0" d="M904.5,461.5"/>
+	   <path class="st0" d="M1010.5,529.5"/>
+	   <path class="st0" d="M1075.5,473.5"/>
+	   <path class="st0" d="M849.5,512.5"/>
+   </g>
+   </svg>
+   
+   
+   <!-- frame 22 -->
+   <svg class="svg-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2200px" height="2200px"  x="150px" y="-250px"
+		viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+   <style type="text/css">
+	   .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	   .st1{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+   </style>
+   <path class="st0" d="M974.1,625"/>
+   <g>
+	   <g>
+		   
+			   <image style="overflow:visible;" width="512" height="266" xlink:href="64D3CB85.png"  transform="matrix(0.4375 0 0 0.4375 848.2267 509.49)">
+		   </image>
+	   </g>
+   </g>
+   <g>
+	   <g>
+		   
+			   <image style="overflow:visible;" width="512" height="252" xlink:href="64D3CB87.png"  transform="matrix(0.5 0 0 0.5 832.1391 467.3226)">
+		   </image>
+	   </g>
+   </g>
+   <g>
+	   <g>
+		   
+			   <image style="overflow:visible;" width="512" height="313" xlink:href="64D3CB82.png"  transform="matrix(0.1055 0 0 0.1055 846.1392 497.3168)">
+		   </image>
+	   </g>
+   </g>
+   <g>
+	   <g>
+		   
+			   <image style="overflow:visible;" width="512" height="429" xlink:href="64D3CB83.png"  transform="matrix(8.398438e-02 0 0 8.398438e-02 890.1392 451.308)">
+		   </image>
+	   </g>
+   </g>
+   <g>
+	   <g>
+		   
+			   <image style="overflow:visible;" width="512" height="323" xlink:href="64D3CB8D.png"  transform="matrix(0.1055 0 0 0.1055 1012.1389 460.7895)">
+		   </image>
+	   </g>
+   </g>
+   <g>
+	   <g>
+		   
+			   <image style="overflow:visible;" width="512" height="429" xlink:href="64D3CB8F.png"  transform="matrix(8.398438e-02 0 0 8.398438e-02 991.1389 506.3079)">
+		   </image>
+	   </g>
+   </g>
+   <path class="st1" d="M1023.7,447"/>
+   <path class="st1" d="M900.7,517"/>
+   <path class="st1" d="M851.7,478"/>
+   <path class="st1" d="M1067.7,506"/>
+   <path class="st1" d="M959.7,590"/>
+   <path class="st1" d="M976.7,470.8"/>
+   <path class="st1" d="M908.7,516.8"/>
+   <path class="st1" d="M861.7,481.8"/>
+   <path class="st1" d="M1072.7,501.8"/>
+   <path class="st1" d="M988.7,463.3"/>
+   <path class="st1" d="M915.7,515.3"/>
+   <path class="st1" d="M1076.7,498.3"/>
+   <path class="st1" d="M988.7,456.3"/>
+   <path class="st1" d="M922.7,512.3"/>
+   <path class="st1" d="M1079.7,494.3"/>
+   <path class="st1" d="M846.5,488.8"/>
+   <path class="st1" d="M1079.5,488.8"/>
+   <path class="st1" d="M988.5,448.8"/>
+   <path class="st1" d="M930.5,511.8"/>
+   <path class="st1" d="M951.7,458.8"/>
+   <path class="st1" d="M961.7,523.8"/>
+   <path class="st1" d="M851.7,481.8"/>
+   <path class="st1" d="M948.5,451.8"/>
+   <path class="st1" d="M971.5,523.8"/>
+   <path class="st1" d="M940.8,458.8"/>
+   <path class="st1" d="M976.8,525.8"/>
+   <path class="st1" d="M1086.8,497.8"/>
+   <path class="st1" d="M928.4,451.8"/>
+   <path class="st1" d="M986.4,525.8"/>
+   <path class="st1" d="M915.9,453.8"/>
+   <path class="st1" d="M1000.9,523.8"/>
+   <path class="st1" d="M832.9,505.8"/>
+   <path class="st0" d="M960.4,594.3"/>
+   <path class="st1" d="M909.9,456.8"/>
+   <path class="st1" d="M1007.9,524.8"/>
+   <path class="st0" d="M904.7,460.8"/>
+   <path class="st0" d="M1010.7,528.8"/>
+   <path class="st0" d="M849.7,511.8"/>
+   <path class="st1" d="M1017.7,520.8"/>
+   <path class="st1" d="M853.7,511.8"/>
+   </svg>
+   
+   </g>
+
+
+
+<g>
+	<g>
+		
+			<image id="objectToMove5" id="Pin" data-name="Pin"  class="target3 target5 " x="1600px" y="550px" style="overflow:visible;" width="124" height="512" xlink:href="824E5390.png" >
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		<image id="targetObject5" id="handle"  data-name="Handle" style="overflow:visible;" width="655" height="288" xlink:href="824E5393.png"  transform="matrix(1 0 0 1 635 315.5)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="355" xlink:href="824E539D.png"  transform="matrix(0.127 0 0 0.127 606.4847 438.2063)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="397" height="512" xlink:href="824E539E.png"  transform="matrix(0.2949 0 0 0.2949 545.958 399)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		<image style="overflow:visible;" width="79" height="110" xlink:href="824E539C.png"  transform="matrix(1 0 0 1 608.8511 516)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="12" height="14" xlink:href="824E5394.png"  transform="matrix(1 0 0 1 628.855 679.0762)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="439" height="512" xlink:href="824E5395.png"  transform="matrix(2.734375e-02 0 0 2.734375e-02 599.9254 656.5381)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="12" height="14" xlink:href="824E53FD.png"  transform="matrix(1 0 0 1 601.855 696.0762)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="105" height="512" xlink:href="824E53FF.png"  transform="matrix(0.2578 0 0 0.2578 609.4648 587)">
+		</image>
+	</g>
+</g>
+<path class="st0" d="M877.5,350.5"/>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="430" xlink:href="824E53FC.png"  transform="matrix(0.1211 0 0 0.1211 585.5 545.4648)">
+		</image>
+	</g>
+</g>
+<path class="st0" d="M1041.5,406.5"/>
+<path class="st1" d="M705,428"/>
+<path class="st1" d="M534,458"/>
+<path class="st1" d="M692,465"/>
+<path class="st1" d="M537,494"/>
+<g>
+	<g  >
+		
+			<image id="objectToMove"   class="discImage" class="moveable" x="1600" y="1000" id="material 1" data-name="material " style="overflow:visible;" width="512" height="271" xlink:href="..\simulation\disc\1-1.png"  ></image>
+
+	</g>
+</g>
+
+<g>
+	<g>
+		
+			<image id="objectToMove6" id="load" data-name="Load (10N)" class="moveable6" x="1210" y="1120" style="overflow:visible;" width="512" height="317" xlink:href="824E53F3.png" >
+		</image>
+	</g>
+</g>
+<path class="st0" d="M1176.5,414.5"/>
+<path class="st0" d="M657.5,537.5"/>
+<path class="st0" d="M1114.5,283.5"/>
+<path class="st0" d="M607.5,436.5"/>
+<path class="st0" d="M1118.5,202.5"/>
+<path class="st0" d="M546.5,414.5"/>
+<path class="st0" d="M1025.5,272.5"/>
+<path class="st0" d="M546.5,414.5"/>
+<path class="st0" d="M1068.5,299.5"/>
+<path class="st0" d="M607.5,436.5"/>
+<path class="st1" d="M1011,333"/>
+<path class="st1" d="M567,464"/>
+<path class="st1" d="M1020,370"/>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="376" xlink:href="824E53F5.png"  transform="matrix(0.1973 0 0 0.1973 481.2404 170.1964)">
+		</image>
+	</g>
+</g>
+<path class="st1" d="M671,469"/>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="355" xlink:href="824E53F7.png"  transform="matrix(0.127 0 0 0.127 523.4313 462.6414)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="154" height="138" xlink:href="824E53F4.png"  transform="matrix(1 0 0 1 512.0801 152.7729)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="255" height="512" xlink:href="824E53EC.png"  transform="matrix(0.3457 0 0 0.3457 629.4229 229.5)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="376" xlink:href="824E53ED.png"  transform="matrix(0.1973 0 0 0.1973 696.2405 110.1964)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="459" xlink:href="824E53EF.png"  transform="matrix(0.3008 0 0 0.3008 728.1602 91.589)">
+		</image>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="255" height="512" xlink:href="824E53C8.png"  transform="matrix(0.3457 0 0 0.3457 840.7549 164.355)">
+		</image>
+	</g>
+</g>
+<path class="st1" d="M929,335"/>
+<path class="st1" d="M697,406"/>
+<path d="M485,195"/>
+<path d="M633,240"/>
+<path d="M485,212"/>
+<path d="M633,253"/>
+<g>
+	<g>
+		
+			<image style="overflow:visible;" width="512" height="422" xlink:href="824E53CF.png"  transform="matrix(3.320312e-02 0 0 3.320312e-02 520.5439 662.9006)">
+		</image>
+	</g>
+</g>
+<path class="st0" d="M1327.5,828.5"/>
+<path class="st0" d="M1156.5,769.5"/>
+<path class="st0" d="M1331.5,819.5"/>
+<path class="st0" d="M1204.5,776.5"/>
+<path class="st1" d="M1518.8,1033.6"/>
+<path class="st1" d="M931.8,831.6"/>
+<path class="st1" d="M1752,963"/>
+<path class="st1" d="M1240,1122"/>
+<path class="st1" d="M1464.9,862.9"/>
+<path class="st1" d="M952.9,1021.9"/>
+<!-- <g>
+	<g>
+		
+			<image id="objectToMove2" id="material 2" data-name="material 2" class="moveable" x="1430" y="1070" style="overflow:visible;" width="512" height="271" xlink:href="824E53C9.png" >
+		</image>
+	</g>
+</g> -->
+<!-- <g>
+	<g  >
+		
+			<image id="objectToMove"  class="moveable" x="1600" y="1000" id="material 1" data-name="material 1" style="overflow:visible;" width="512" height="271" xlink:href="824E53CB.png"  ></image>
+
+	</g>
+</g> -->
+<path class="st1" d="M1865,991"/>
+<path class="st1" d="M1344,1153"/>
+<g>
+	<g>
+		<image  id="objectToMove3" id="ball" data-name="Ball" class="moveable3" style="overflow:visible;" width="23" height="23" xlink:href="824E53C6.png"  transform="matrix(1 0 0 1 1864.5 979.5)">
+		</image>
+	</g>
+</g>
+<path class="st1" d="M1388,1171"/>
+<path class="st1" d="M1388,1229"/>
+<path class="st1" d="M1415,1229"/>
+<path class="st1" d="M1415,1171"/>
+<path class="st1" d="M1415,1229"/>
+<path class="st1" d="M1388,1171"/>
+</svg>
+<h1 id="out" style="margin-left: 5px;">OUTPUT:</h1>
+</div>
+
+<div id="resultContainer">
+	<img id="material1Photo" src="co1.png" alt="Material 1">
+	<img id="material2Photo" src="co2.png" alt="Material 2">
+</div>
+
+
+			</section>
+
+		</div>
+	</div>
+	
+	
+
+	<!-- Add JS at the bottom of HTML file --> 
+        <script src="./js/main.js"></script>
+		
+		<!-- <div>
+			<center><button style="margin-bottom: 40px; " onclick="window.print()">Print this page</button></center>
+			</div> -->
+</body>
+</html>

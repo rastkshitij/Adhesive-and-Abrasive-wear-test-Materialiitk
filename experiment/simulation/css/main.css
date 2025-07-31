@@ -1,0 +1,390 @@
+/* You CSS goes in here */
+*{
+    padding: 0%;
+    margin: 0%; 
+    box-sizing: border-box;
+}
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 25px;
+    right: 0;
+    background-color: #d5a45e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 35px;
+  }
+  #lists{
+    margin-left: 20px;
+    padding: 8px 8px 8px 32px;
+    color:white;
+  }
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff7f7;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #6b6969;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #d21b7a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+  li{
+    margin:20px;
+  }
+
+
+  .m{
+    color: rgb(35, 33, 33);
+  }
+        
+  .button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.allbox{
+    border:4px solid rgb(25, 78, 134);
+    border-radius: 25px;
+    margin:40px;
+    margin-bottom: 20px;
+    padding: 30px;
+    box-shadow: 2px 2px 5px 4px black ;
+  }
+  .container{
+    display: flex;
+  }
+  
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(252, 234, 153, 0.651); */
+    background-color:  bisque;
+    height: 1050px;
+    border-radius: 25px;
+    width: 50%;
+    margin: 2px;
+    margin-left: 0px;
+    border: 2px solid black;
+  }
+
+ .main-section2 {
+    display: flex;
+    flex-direction: column;
+    background-color:  bisque;
+    height: 1050px;
+    border-radius: 25px;
+    width: 150%;
+    margin: 2px;
+    margin-left: 0px;
+    margin-right:0px;
+    border: 2px solid black;
+  }
+
+  .main-section3 {
+    display: flex;
+    flex-direction: column;
+    background-color:bisque;
+    height: 330px;
+    border-radius: 25px;
+    width: 100%;
+    margin: 2px;
+    margin-left: 0px;
+    border: 2px solid black;
+  }
+
+  .control-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    /* align-items: center; */
+    padding: 20px;
+  }
+
+  
+
+.moveable {
+  width: 170px;
+  height: 129px;
+  /* background-color: blue; */
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+
+.target {
+  width: 257px;
+  height: 129px;
+  /* background-color: red; */
+  position: absolute;
+  /* left: 100px; /* Adjust the target position as needed */
+  /* top: 50px; */ 
+}
+
+.moveable3 {
+  width: 40px;
+  height: 200px;
+  /* background-color: blue; */
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+
+.target3 {
+  width: 124px;
+  height: 512px;
+  /* background-color: red; */
+  position: absolute;
+  /* left: 100px; /* Adjust the target position as needed */
+  /* top: 50px; */ 
+}
+  
+.moveable5{
+  width: 124px;
+  height: 512px;
+  /* background-color: blue; */
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+.target5 {
+  width: 55px;
+  height: 220px;
+  /* background-color: red; */
+  position: absolute;
+  /* left: 100px; /* Adjust the target position as needed */
+  /* top: 50px; */ 
+}
+
+.moveable6{
+  width: 170px;
+  height: 129px;
+  /* background-color: blue; */
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+.B[disabled]{
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.hidden{
+  display: none;
+}
+
+  
+
+#elementName {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: none;
+  margin-inline:800px ;
+  margin-top: 300px;
+}
+
+
+/* frame css */
+
+ /* Add CSS styles for image container */
+ #image-container {
+  width: 200px; /* Adjust the width and height as needed */
+  height: 100px;
+  position: relative;
+}
+
+/* Add CSS styles for each SVG image */
+.svg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  /* transform:translate(1000px, 100px); */
+}
+
+
+/* material image show */
+
+ /* Hide the result container and material photos by default */
+ #resultContainer {
+  display: none;
+  width: 200px;
+  height: 200px;
+  margin-left: 30px;
+  margin-right: 400px;
+  margin-bottom:300px ;
+  align-self: center;
+}
+
+#material1Photo,
+#material2Photo {
+  display: none;
+  width: 650px;
+  height: 300px;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.974); 
+}
+
+
+/* Help! video */
+.video-player {
+  display: none;
+  position: relative;
+}
+
+video {
+  width: 800px;
+  height: 800px;
+  align-items: center;
+  margin-left: 300px;
+
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  padding: 5px 10px;
+  border-radius: 50%;
+  margin-right: 400px;
+  margin-top: 70px;
+}
+
+#moveButton8 ,#moveButton4, #out {
+  display: none; /* Initially hide the button */
+}
+
+.left{
+  display: flex;
+    flex-direction: column;
+    height: 215px;
+    width: 150%;
+    margin: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+
+.right{
+  display: flex;
+    flex-direction: column;
+   
+    height: 215px;
+    /* border-radius: 25px; */
+    width: 150%;
+    margin: 2px;
+    margin-left: 0px;
+    margin-right:0px;
+}
+
+.left-right{
+  display: flex;
+}
+
+.img1{
+    height: 190px;
+    border-radius: 25px;
+    width: 600px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border: 3px solid black;
+}
+
+.img2{
+  height: 190px;
+    border-radius: 25px;
+    width: 600px;
+    margin-top: 5px;
+    border: 3px solid black;
+}
+
+@media only screen and (max-width: 1400px){
+
+  
+.img1{
+  height: 150px;
+  border-radius: 25px;
+  width: 350px;
+  margin-left: 10px;
+  margin-top: 5px;
+  border: 3px solid black;
+}
+
+.img2{
+height: 150px;
+  border-radius: 25px;
+  width: 350px;
+  margin-top: 5px;
+  border: 3px solid black;
+}
+}
+
+.img1:hover{
+  box-shadow: 0 0 20px 0px rgba(4,9,30,0.7);
+}  
+
+.img2:hover{
+  box-shadow: 0 0 20px 0px rgba(4,9,30,0.7);
+}  
+
+@media only screen and (max-width: 1100px){
+  #material1Photo,
+#material2Photo {
+  display: none;
+  width: 580px;
+  height: 310px;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.974); 
+}
+}

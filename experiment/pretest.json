@@ -1,0 +1,75 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Wear is best suited to define as",
+      "answers": {
+        "a": "Loss of material due to oxide formation at high temperature",
+        "b": "Loss of material due to corrosive products on surfaces",
+        "c": "Loss of material due to relative motion between surfaces of a contacting substance or substances",
+        "d": "Loss of material due to radiation exposure"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Wear is generally occurring on ",
+      "answers": {
+        "a": "Materials’ surfaces in contact with each other",
+        "b": "In materials’ bulk",
+        "c": "Both materials’ surfaces and bulk ",
+        "d": "Neither materials’ surfaces nor bulk"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which of the following can affect the wear of materials?",
+      "answers": {
+        "a": "Surface topography and chemistry",
+        "b": "Stresses acting on the surface",
+        "c": "Types of materials in contact",
+        "d": "Lubrication of surfaces",
+        "e": "All the options are correct "
+
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "e",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. We can completely stop wear of materials by",
+      "answers": {
+        "a": "We can completely stop wear of materials by use of suitable lubricants",
+        "b": "We can completely stop wear of materials by making the surface smooth",
+        "c": "There will always be wear of materials, we can only minimize its extent",
+        "d": "By using the same material for both the moving components/parts "
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

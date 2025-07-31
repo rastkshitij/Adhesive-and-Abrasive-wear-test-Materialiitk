@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which type of wear occurs due to the relative motion and interaction between two solid surfaces?",
+      "answers": {
+        "a": "Adhesive wear",
+        "b": "Abrasive wear",
+        "c": "Fatigue wear",
+        "d": "Erosive wear"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What is the primary mechanism of wear in adhesive wear?",
+      "answers": {
+        "a": "Material fatigue and crack propagation",
+        "b": "Surface deformation and material transfer between surfaces",
+        "c": "Hard particles or foreign objects causing surface damage",
+        "d": "High-velocity particle impact on a surface"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. In the pin-on-disc wear measurement method, the wear of a material is assessed by:",
+      "answers": {
+        "a": "Measuring the density of material",
+        "b": "Determining the volume of material removed from the pin",
+        "c": "Analyzing the surface roughness of the disc",
+        "d": "Monitoring the temperature increase during the test"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The pin-on-disc wear test is commonly used to evaluate:",
+      "answers": {
+        "a": "Hardness of the pin material",
+        "b": "Fatigue strength of the disc material",
+        "c": "Wear resistance of materials under sliding contact",
+        "d": "Tensile strength of the pin and disc materials"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. What is the primary cause of abrasive wear?",
+      "answers": {
+        "a": "Material fatigue and crack propagation",
+        "b": "Surface deformation and material transfer between surfaces",
+        "c": "High-velocity particle impact on a surface",
+        "d": "Hard particles or foreign objects causing surface damage"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}
