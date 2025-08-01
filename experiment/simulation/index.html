@@ -52,12 +52,12 @@
 				<div class="left-right">  
                 <div class="left">
 					<center><h3 style="margin-left: 20px;">Combination 1:</h3></center>
-					<center><img src="c1.png" alt="Combination 1" class="img1"></center>
+					<center><img src="c1.png" alt="Combination 1" class="img1" style="width: 300px; height: 200px; object-fit: contain;"></center>
 					<center><strong><h3 style="margin-top:2px; ">Tribo-couple for Adhesive wear test</h3></strong></center>
 				</div>
 				<div class="right">
 					<center><h3 >Combination 2:</h3></center>
-					<center><img src="c2.jpg" alt="Combination 2" class="img2"></center>
+					<center><img src="c2.jpg" alt="Combination 2" class="img2" style="width: 300px; height: 200px; object-fit: contain;"></center>
 					<center><strong><h3 style="margin-top:2px;">Tribo-couple for Abrasive wear test</h3></strong></center>
 				</div>
 			</div>
@@ -98,6 +98,13 @@
 				
 				<div style="height:100% ; width:100%; position: relative;" >
 					<button class="button button1" id="refreshButton">Reset Combination</button>
+
+					<!--this is the container on right hand side-->
+					  <div class="formal-container">
+    Put the mouse pointer on the different components to see details
+  </div>
+  
+
 				<!-- SVG IMAGE PART -->
 				<div id="elementName"></div>
                 <svg id="svgContainer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -3155,7 +3162,7 @@
 <g>
 	<g  >
 		
-			<image id="objectToMove"   class="discImage" class="moveable" x="1600" y="1000" id="material 1" data-name="material " style="overflow:visible;" width="512" height="271" xlink:href="..\simulation\disc\1-1.png"  ></image>
+			<image id="objectToMove"  class="discImage" class="moveable" x="1600" y="1000" id="material 1" data-name="material " style="overflow:visible;" width="512" height="271" xlink:href="..\simulation\disc\1-1.png"  ></image>
 
 	</g>
 </g>
@@ -3271,7 +3278,7 @@
 <path class="st1" d="M1344,1153"/>
 <g>
 	<g>
-		<image  id="objectToMove3" id="ball" data-name="Ball" class="moveable3" style="overflow:visible;" width="23" height="23" xlink:href="824E53C6.png"  transform="matrix(1 0 0 1 1864.5 979.5)">
+		<image  id="objectToMove3" id="ball" data-name="Ball with diameter: 6mm" class="moveable3" style="overflow:visible;" width="23" height="23" xlink:href="824E53C6.png"  transform="matrix(1 0 0 1 1864.5 979.5)">
 		</image>
 	</g>
 </g>
@@ -3284,14 +3291,31 @@
 </svg>
 <h1 id="out" style="margin-left: 5px;">OUTPUT:</h1>
 </div>
+</section>
 
-<div id="resultContainer">
-	<img id="material1Photo" src="co1.png" alt="Material 1">
-	<img id="material2Photo" src="co2.png" alt="Material 2">
+<div id="resultContainer" style="display: none;">
+    <!-- Material 1 Slideshow -->
+    <div id="material1Slideshow" class="slideshow" style="display: none; text-align: center;">
+        <img id="material1Image" src="co1.png" alt="Material 1" style="width: 300px;">
+        <div class="captionBox">
+            <p id="material1Caption" class="caption"></p>
+            <button  class="button button1 B "id="material1NextBtn">Next</button>
+        </div>
+    </div>
+
+    <!-- Material 2 Slideshow -->
+    <div id="material2Slideshow" class="slideshow" style="display: none; text-align: center;">
+        <img id="material2Image" src="co2.png" alt="Material 2" style="width: 300px;">
+        <div class="captionBox">
+            <p id="material2Caption" class="caption"></p>
+            <button  class="button button1 B "id="material2NextBtn">Next</button>
+        </div>
+    </div>
 </div>
 
 
-			</section>
+
+			
 
 		</div>
 	</div>

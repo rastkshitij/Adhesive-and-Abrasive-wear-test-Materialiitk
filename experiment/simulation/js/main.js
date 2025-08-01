@@ -17,7 +17,7 @@ const slideshowImagesArray = [
     '../simulation/disc/14-1.png',
     '../simulation/disc/15-1.png',
     '../simulation/disc/16-1.png',
-        '../simulation/disc/1-1.png',
+    '../simulation/disc/1-1.png',
     '../simulation/disc/2-1.png',
     '../simulation/disc/3-1.png',
     '../simulation/disc/4-1.png',
@@ -25,20 +25,22 @@ const slideshowImagesArray = [
     '../simulation/disc/6-1.png',
     '../simulation/disc/7-1.png',
 ];
-slideshowImage.style.width="150px";
-slideshowImage.style.height="130px";
+
+slideshowImage.style.width = "150px";
+slideshowImage.style.height = "130px";
 slideshowImage.setAttribute('x', '1610');
 slideshowImage.setAttribute('y', '1002');
+
 let slideshowCurrentIndex = 0;
 let slideshowIntervalId;
 
 function updateSlideshowImage() {
     slideshowCurrentIndex = (slideshowCurrentIndex + 1) % slideshowImagesArray.length;
-    slideshowImage.setAttribute('href', slideshowImagesArray[slideshowCurrentIndex]); // <-- key change
+    slideshowImage.setAttribute('href', slideshowImagesArray[slideshowCurrentIndex]);
 }
 
 function startImageSlideshow() {
-    clearInterval(slideshowIntervalId);  // prevent overlapping
+    clearInterval(slideshowIntervalId);
     slideshowIntervalId = setInterval(updateSlideshowImage, 2);
 
     setTimeout(() => {
@@ -46,140 +48,66 @@ function startImageSlideshow() {
     }, 5000);
 }
 
-
-
-
-
-//Your JavaScript goes in here
-function openNav() {
-    document.getElementById("mySidepanel").style.width = "500px";
-    document.getElementById("mySidepanel").style.height = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-}
-
-var flag_material1=false
-var flag_material2 = false
-
-// Button 1 move
+// Movement and interaction logic
 const moveButton = document.getElementById('moveButton');
-    const objectToMove = document.getElementById('objectToMove');
-    const targetObject = document.getElementById('targetObject');
-
-    function moveObject() {
-        flag_material1= true
-        // Get the position of the target object
-        const targetRect = targetObject.getBoundingClientRect();
-        // const targetX = targetRect.left;
-        // const targetY = targetRect.top;
-
-        // Move the object to the target position
-        objectToMove.style.transition = 'transform 2s ease'; // Add a smooth transition effect
-        objectToMove.style.transform = `translate(-439px, -272px)`;
-    }
-
-    moveButton.addEventListener('click', moveObject);
-    
-
-    // Button 2 move
-    const moveButton2 = document.getElementById('moveButton2');
-    const objectToMove2 = document.getElementById('objectToMove');
-    const targetObject2 = document.getElementById('targetObject');
-
-    function moveObject2() {
-        flag_material2 = true
-        // Get the position of the target object
-        const targetRect = targetObject.getBoundingClientRect();
-        // const targetX = targetRect.left;
-        // const targetY = targetRect.top;
-
-        // Move the object to the target position
-        objectToMove2.style.transition = 'transform 2s ease'; // Add a smooth transition effect
-        // objectToMove2.style.transform = `translate(-265px, -340px)`;
-        objectToMove.style.transform = `translate(-439px, -272px)`;
-    }
-
-    moveButton2.addEventListener('click', moveObject2);
-
-    // Button 3 move
-    const moveButton3 = document.getElementById('moveButton3');
-    const objectToMove3 = document.getElementById('objectToMove3');
-    const targetObject3 = document.getElementById('targetObject3');
-
-    function moveObject3() {
-        // Get the position of the target object
-        const targetRect = targetObject.getBoundingClientRect();
-        // const targetX = targetRect.left;
-        // const targetY = targetRect.top;
-
-        // Move the object to the target position
-        objectToMove3.style.transition = 'transform 2s ease'; // Add a smooth transition effect
-        objectToMove3.style.transform = `translate(1605px, 430px)`;
-    }
-
-    moveButton3.addEventListener('click', moveObject3);
-
-    // Button 4 ball opicity
+const moveButton2 = document.getElementById('moveButton2');
+const moveButton3 = document.getElementById('moveButton3');
 const moveButton4 = document.getElementById('moveButton4');
-function moveObject4() {
-    objectToMove3.style.opacity=0;
-}
-moveButton4.addEventListener('click', moveObject4);
-
-
-// Button 5 move
 const moveButton5 = document.getElementById('moveButton5');
-    const objectToMove5 = document.getElementById('objectToMove5');
-    const targetObject5 = document.getElementById('targetObject5');
-
-    function moveObject5() {
-        // Get the position of the target object
-        const targetRect = targetObject.getBoundingClientRect();
-        // const targetX = targetRect.left;
-        // const targetY = targetRect.top;
-
-        // Move the object to the target position
-        objectToMove5.style.transition = 'transform 2s ease'; // Add a smooth transition effect
-        objectToMove5.style.transform = `translate(-405px, -17px)`;
-}
-
-    moveButton5.addEventListener('click', moveObject5);
-
-    // Button 6 move
 const moveButton6 = document.getElementById('moveButton6');
+const moveButton7 = document.getElementById('moveButton7');
+const moveButton8 = document.getElementById('moveButton8');
+const refreshButton = document.getElementById('refreshButton');
+
+const objectToMove = document.getElementById('objectToMove');
+const objectToMove2 = document.getElementById('objectToMove');
+const objectToMove3 = document.getElementById('objectToMove3');
+const objectToMove5 = document.getElementById('objectToMove5');
 const objectToMove6 = document.getElementById('objectToMove6');
+
+const targetObject = document.getElementById('targetObject');
+const targetObject3 = document.getElementById('targetObject3');
+const targetObject5 = document.getElementById('targetObject5');
 const targetObject6 = document.getElementById('targetObject6');
 
-function moveObject6() {
-    // Get the position of the target object
-    const targetRect = targetObject.getBoundingClientRect();
-    // const targetX = targetRect.left;
-    // const targetY = targetRect.top;
-
-    // Move the object to the target position
-    objectToMove6.style.transition = 'transform 2s ease'; // Add a smooth transition effect
-    objectToMove6.style.transform = `translate(-90px, -705px)`;
-}
-
-moveButton6.addEventListener('click', moveObject6);
-
-
-// material button disable
+let selectedMaterial = null;
 
 moveButton.addEventListener('click', () => {
+    selectedMaterial = 1;
     moveButton2.disabled = true;
     moveButton.disabled = false;
+    objectToMove.style.transition = 'transform 2s ease';
+    objectToMove.style.transform = `translate(-439px, -272px)`;
 });
 
 moveButton2.addEventListener('click', () => {
+    selectedMaterial = 2;
     moveButton.disabled = true;
     moveButton2.disabled = false;
+    objectToMove2.style.transition = 'transform 2s ease';
+    objectToMove2.style.transform = `translate(-439px, -272px)`;
 });
 
-// button one by one open
+moveButton3.addEventListener('click', () => {
+    objectToMove3.style.transition = 'transform 2s ease';
+    objectToMove3.style.transform = `translate(1605px, 430px)`;
+});
 
+moveButton4.addEventListener('click', () => {
+    objectToMove3.style.opacity = 0;
+});
+
+moveButton5.addEventListener('click', () => {
+    objectToMove5.style.transition = 'transform 2s ease';
+    objectToMove5.style.transform = `translate(-405px, -17px)`;
+});
+
+moveButton6.addEventListener('click', () => {
+    objectToMove6.style.transition = 'transform 2s ease';
+    objectToMove6.style.transform = `translate(-90px, -705px)`;
+});
+
+// One-by-one button reveal
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('button');
 
@@ -193,28 +121,11 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function () {
             revealNextButton(i);
-      });
-  }
+        });
+    }
 });
 
-
-// const pngElement = document.querySelector('.png-element');
-// const popup = document.getElementById('popup');
-// const popupText = document.getElementById('popup-text');
-
-// pngElement.addEventListener('mouseover', () => {
-//     const name = pngElement.getAttribute('alt');
-//     popupText.textContent = name;
-//     popup.style.display = 'block';
-// });
-
-// pngElement.addEventListener('mouseout', () => {
-//     // popup.style.display = 'none';
-// });
-
-
-// popup all Element
-
+// Tooltip on hover for SVG elements
 const svgContainer = document.getElementById("svgContainer");
 const elementName = document.getElementById("elementName");
 
@@ -231,119 +142,128 @@ svgContainer.addEventListener("mouseout", () => {
     elementName.style.display = "none";
 });
 
-// rotation base
+// SVG image slideshow
+const svgImages = document.querySelectorAll('.svg-image');
+let currentIndex = 0;
+let intervalId;
 
- // JavaScript code for the rotation animation
- const svgImages = document.querySelectorAll('.svg-image');
- const moveButton7 = document.getElementById('moveButton7');
- let currentIndex = 0;
- let intervalId;
-
-
-  // Function to display the next SVG image
-  function showNextImage() {
-    svgImages[currentIndex].style.display = 'none'; // Hide the current image
-    currentIndex = (currentIndex + 1) % svgImages.length; // Move to the next image
-    svgImages[currentIndex].style.display = 'block'; // Display the next image
+function showNextImage() {
+    svgImages[currentIndex].style.display = 'none';
+    currentIndex = (currentIndex + 1) % svgImages.length;
+    svgImages[currentIndex].style.display = 'block';
 }
 
-// Function to start the animation
 function startAnimation() {
-    intervalId = setInterval(showNextImage, 0.1); // Change the interval as needed (in milliseconds)
+    intervalId = setInterval(showNextImage, 0.1);
 }
 
-// Function to stop the animation after 5 seconds
 function stopAnimation() {
     clearInterval(intervalId);
 }
 
-// Add a click event listener to start the animation
 moveButton7.addEventListener('click', () => {
     startAnimation();
-    setTimeout(stopAnimation, 5000); // Stop after 5 seconds (5000 milliseconds)
+    setTimeout(stopAnimation, 5000);
 });
-
 moveButton7.addEventListener('click', startImageSlideshow);
-// JavaScript logic
-// const material1Button = document.getElementById('moveButton');
-// const material2Button = document.getElementById('moveButton2');
-const moveButton8 = document.getElementById('moveButton8');
+
+// Slideshow logic
 const resultContainer = document.getElementById('resultContainer');
-const material1Photo = document.getElementById('material1Photo');
-const material2Photo = document.getElementById('material2Photo');
+const material1Slideshow = document.getElementById('material1Slideshow');
+const material2Slideshow = document.getElementById('material2Slideshow');
 
-// Function to show the result photo based on the choice of material
-function showResult() {
-    if (flag_material1) {
+const material1Image = document.getElementById('material1Image');
+const material1Caption = document.getElementById('material1Caption');
+const material1NextBtn = document.getElementById('material1NextBtn');
 
-        resultContainer.style.display = 'block';
-        material1Photo.style.display = 'block';
-        material2Photo.style.display = 'none';
-    }
-    if (flag_material2) {
-            resultContainer.style.display = 'block';
-            material1Photo.style.display = 'none';
-            material2Photo.style.display = 'block';
-        }
-    //  else if (moveButton2.checked) {
-    //     resultContainer.style.display = 'block';
-    //     material1Photo.style.display = 'none';
-    //     material2Photo.style.display = 'block';
-    if(!flag_material1 && !flag_material2){
-        alert('Please select a material first.');
+const material2Image = document.getElementById('material2Image');
+const material2Caption = document.getElementById('material2Caption');
+const material2NextBtn = document.getElementById('material2NextBtn');
 
+const material1Slides = [
+    { src: '../simulation/outputImages/c01-1.png', caption: 'Observation of worn surface', buttonLabel: 'Maginify' },
+    { src: '../simulation/outputImages/c01-4.png', caption: 'Wear track and Abraded wear debris', buttonLabel: 'Maginfied image' },
+    { src: '../simulation/outputImages/c01-3.png', caption: 'Abraded wear debris', buttonLabel: 'Scanning electron micrographs of worn surface' }
+];
+
+const material2Slides = [
+    { src: '../simulation/outputImages/c02-1.png', caption: 'Observation of worn surface', buttonLabel: 'Maginify' },
+    { src: '../simulation/outputImages/c02-2.png', caption: 'Wear track', buttonLabel: 'More Maginfy' },
+    { src: '../simulation/outputImages/c02-3.png', caption: 'Wear debris adhered to the counter body', buttonLabel: 'Counter body' },
+ { src: '../simulation/outputImages/c02-4.png', caption: 'Ball', buttonLabel: 'Ball holder' }
+];
+
+let index1 = 0;
+let index2 = 0;
+
+function updateSlideshow(material) {
+    if (material === 1) {
+        const slide = material1Slides[index1];
+        material1Image.src = slide.src;
+        material1Caption.textContent = slide.caption;
+        material1NextBtn.textContent = slide.buttonLabel;
+    } else if (material === 2) {
+        const slide = material2Slides[index2];
+        material2Image.src = slide.src;
+        material2Caption.textContent = slide.caption;
+        material2NextBtn.textContent = slide.buttonLabel;
     }
 }
-console.log(moveButton8.addEventListener('click', showResult)
-)
-// Add click event listener to the Show Result button
+
+material1NextBtn.onclick = () => {
+    index1 = (index1 + 1) % material1Slides.length;
+    updateSlideshow(1);
+};
+
+material2NextBtn.onclick = () => {
+    index2 = (index2 + 1) % material2Slides.length;
+    updateSlideshow(2);
+};
+
+function showResult() {
+    resultContainer.style.display = 'block';
+
+    if (selectedMaterial === 1) {
+        material1Slideshow.style.display = 'block';
+        material2Slideshow.style.display = 'none';
+        index1 = 0;
+        updateSlideshow(1);
+    } else if (selectedMaterial === 2) {
+        material1Slideshow.style.display = 'none';
+        material2Slideshow.style.display = 'block';
+        index2 = 0;
+        updateSlideshow(2);
+    }
+}
+
 moveButton8.addEventListener('click', showResult);
 
-
-
-// Help! video
-
+// Help video logic
 document.getElementById("playButton").addEventListener("click", function () {
-    var videoPlayer = document.querySelector(".video-player");
-    videoPlayer.style.display = "block";
+    document.querySelector(".video-player").style.display = "block";
 });
 
 document.getElementById("closeButton").addEventListener("click", function () {
-    var videoPlayer = document.querySelector(".video-player");
-    videoPlayer.style.display = "none";
-    
-    // Pause the video when closing
-    var video = document.getElementById("video");
-    video.pause();
+    document.querySelector(".video-player").style.display = "none";
+    document.getElementById("video").pause();
 });
 
-// button open in 5 sec
+// Delayed visibility for moveButton8
+moveButton7.addEventListener("click", function () {
+    setTimeout(function () {
+        document.getElementById("moveButton8").style.display = "block";
+        document.getElementById("out").style.display = "block";
+    }, 5000);
+});
 
-document.getElementById("moveButton7").addEventListener("click", function() {
-    // Hide the initial button
-    // this.style.display = "none";
-    
-    // Use setTimeout to show the hidden button after 5 seconds
-    setTimeout(function() {
-      document.getElementById("moveButton8").style.display = "block";
-      document.getElementById("out").style.display = "block";
-    }, 5000); // 5000 milliseconds = 5 seconds
-  });
+// Button 4 appearance after 1 sec of Button 3
+moveButton3.addEventListener("click", function () {
+    setTimeout(function () {
+        document.getElementById("moveButton4").style.display = "block";
+    }, 1000);
+});
 
-// button open in 1 sec
-
-  document.getElementById("moveButton3").addEventListener("click", function() {
-    // Hide the initial button
-    // this.style.display = "none";
-    
-    // Use setTimeout to show the hidden button after 5 seconds
-    setTimeout(function() {
-      document.getElementById("moveButton4").style.display = "block";
-    }, 1000); // 5000 milliseconds = 5 seconds
-  });
-
-  document.getElementById('refreshButton').addEventListener('click', function() {
-    window.location.href = window.location.href; // Refresh the current page
-  });
-
-
+// Refresh logic
+refreshButton.addEventListener('click', function () {
+    window.location.href = window.location.href;
+});
