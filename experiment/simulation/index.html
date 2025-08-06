@@ -73,16 +73,31 @@
 	  <h2 class="m">Input Parameters:</h2><br>
 	  
 	  <h3 class="m">Enter the Material (couple Material):</h3><br>
-	  <button class="button button1 B " id="moveButton"  onclick="toggleButtons()">Choice Combination 1</button>  
-	  <button class="button button1 B " id="moveButton2"  onclick="toggleButtons()">Choice Combination 2</button>
+	  <button class="button button1 B " id="moveButton"  onclick="toggleButtons();markTick(this)">Choice Combination 1 <span class="tick">✔️</span></button>  
+	  <button class="button button1 B " id="moveButton2"  onclick="toggleButtons(); markTick(this)">Choice Combination 2</button>
 	  <button class="button button1 B" id="moveButton3">Input Ball</button>
 	  <button class="button button1 hidden B" id="moveButton4" >Insert The Ball</button>
 	  <!-- <button class="button button1 hidden" id="moveButton4" >Move Handle</button> -->
-	  <button class="button button1 hidden B" id="moveButton5" >pin on tribometer</button>
+	  <button class="button button1 hidden B" id="moveButton5" >Pin On Tribometer</button>
 	  <button class="button button1 hidden  B" id="moveButton6" >Input Load (10N)</button>
-	  <button class="button button1 hidden B" id="moveButton7" style="cursor: pointer;" >Start Rotation</button>
-	  <button class="button button1 hidden  B" id="moveButton8" >Show Result</button>
-	   
+	  <button class="button button1 hidden B" id="moveButton7" style="cursor: pointer;" >Start Rotation for 30 minutes</button>
+	  <button class="button button1 hidden  B" id="moveButton8" >Observations</button>
+	  <button  class="button button1 B" id="conclusion"onclick="showMessage()">Conclusion:</button>
+
+	  <div id="messageBox" class="objective-container" style=" display:none;padding: 20px; border: 2px solid #333;">
+	<h1 id="out" style="margin-left: 5px;">Conclusion:</h1>
+</div>
+
+<div class="objective-container" id="learningGoals">
+  <strong>The conclusions of the experiment are:</strong>
+  <ul class="objective-list">
+    <li>Understand the importance of wear</li>
+    <li>Perform wear test</li>
+    <li>Distinguish between abrasive and adhesive wear</li>
+  </ul>
+</div>
+
+
 				</div>	  
 			</section>
 
@@ -3278,7 +3293,7 @@
 <path class="st1" d="M1344,1153"/>
 <g>
 	<g>
-		<image  id="objectToMove3" id="ball" data-name="Ball with diameter: 6mm" class="moveable3" style="overflow:visible;" width="23" height="23" xlink:href="824E53C6.png"  transform="matrix(1 0 0 1 1864.5 979.5)">
+		<image  id="objectToMove3" id="ball" data-name="Ball with diameter: 6 mm" class="moveable3" style="overflow:visible;" width="23" height="23" xlink:href="824E53C6.png"  transform="matrix(1 0 0 1 1864.5 979.5)">
 		</image>
 	</g>
 </g>
@@ -3289,29 +3304,40 @@
 <path class="st1" d="M1415,1229"/>
 <path class="st1" d="M1388,1171"/>
 </svg>
-<h1 id="out" style="margin-left: 5px;">OUTPUT:</h1>
+
+
+<div id="resultContainer" style="display: none; border: 2px solid black;">
+				<u><h1 style="margin-left: 5px;">Observations:</h1></u><br>
+    <!-- Material 1 Slideshow -->
+    <div id="material1Slideshow" class="slideshow" style="display: none; text-align: center;border: 2px solid black;">
+<u><h1> Combination 1</h1><br></u>
+<div>
+        <img id="material1Image" src="co1.png" alt="Material 1" style=" margin-top:10px;width: 400px; height: 250px;border: 2px solid black;">
+        <div class="captionBox">
+            <p id="material1Caption" class="caption"></p><br>
+			<p>Click On the button !</p>
+            <button id="material1NextBtn" class="reveal-button">Next</button>
+			<button  class="reveal-button" id="conclusion"onclick="showMessage()">Conclusion:</button>
+        </div>
+    </div>
+</div>
+    <!-- Material 2 Slideshow -->
+    <div id="material2Slideshow" class="slideshow" style="display: none; text-align: center;border: 2px solid black;">
+		<u><h1> Combination 2</h1><br></u>
+		<div>
+        <img id="material2Image" src="co2.png" alt="Material 2" style="margin-top:10px;width: 400px; height: 250px;border: 2px solid black;">
+        <div class="captionBox">
+            <p id="material2Caption" class="caption"style="border: 2px solid black;"></p><br>
+            <button id="material2NextBtn" class="reveal-button">Next</button><br>
+        </div><button  class="reveal-button" id="conclusion"onclick="showMessage()" style="margin-top: 4px;">Conclusion:</button>
+    </div>
+</div>
+</div>
+
+
 </div>
 </section>
 
-<div id="resultContainer" style="display: none;">
-    <!-- Material 1 Slideshow -->
-    <div id="material1Slideshow" class="slideshow" style="display: none; text-align: center;">
-        <img id="material1Image" src="co1.png" alt="Material 1" style="width: 300px;">
-        <div class="captionBox">
-            <p id="material1Caption" class="caption"></p>
-            <button  class="button button1 B "id="material1NextBtn">Next</button>
-        </div>
-    </div>
-
-    <!-- Material 2 Slideshow -->
-    <div id="material2Slideshow" class="slideshow" style="display: none; text-align: center;">
-        <img id="material2Image" src="co2.png" alt="Material 2" style="width: 300px;">
-        <div class="captionBox">
-            <p id="material2Caption" class="caption"></p>
-            <button  class="button button1 B "id="material2NextBtn">Next</button>
-        </div>
-    </div>
-</div>
 
 
 

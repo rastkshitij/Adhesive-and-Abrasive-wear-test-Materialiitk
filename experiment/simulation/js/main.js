@@ -1,5 +1,6 @@
 const slideshowImage = document.querySelector('.discImage');
-
+document.getElementById("conclusion").style.display="none"
+document.getElementById("out").style.display="none"
 const slideshowImagesArray = [
     '../simulation/disc/1-1.png',
     '../simulation/disc/2-1.png',
@@ -41,7 +42,7 @@ function updateSlideshowImage() {
 
 function startImageSlideshow() {
     clearInterval(slideshowIntervalId);
-    slideshowIntervalId = setInterval(updateSlideshowImage, 2);
+    slideshowIntervalId = setInterval(updateSlideshowImage, 0.1);
 
     setTimeout(() => {
         clearInterval(slideshowIntervalId);
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function revealNextButton(currentButtonIndex) {
         if (currentButtonIndex < buttons.length - 1) {
-            buttons[currentButtonIndex].disabled = true;
+            // buttons[currentButtonIndex].disabled = true;
             buttons[currentButtonIndex + 1].classList.remove('hidden');
         }
     }
@@ -181,16 +182,16 @@ const material2Caption = document.getElementById('material2Caption');
 const material2NextBtn = document.getElementById('material2NextBtn');
 
 const material1Slides = [
-    { src: '../simulation/outputImages/c01-1.png', caption: 'Observation of worn surface', buttonLabel: 'Maginify' },
-    { src: '../simulation/outputImages/c01-4.png', caption: 'Wear track and Abraded wear debris', buttonLabel: 'Maginfied image' },
-    { src: '../simulation/outputImages/c01-3.png', caption: 'Abraded wear debris', buttonLabel: 'Scanning electron micrographs of worn surface' }
+    { src: '../simulation/outputImages/c01-1.png', caption: 'Observation of worn surface under a scanning electron microscope (SEM)', buttonLabel: 'Study under a scanning electron microscope (SEM)' },
+    { src: '../simulation/outputImages/c01-2.png', caption: 'Wear track ', buttonLabel: 'At Higher Magnification' },
+    { src: '../simulation/outputImages/c01-3.png', caption: 'Abraded wear debris', buttonLabel: 'Observation of worn surface under a scannig mircoscope' }
 ];
 
 const material2Slides = [
-    { src: '../simulation/outputImages/c02-1.png', caption: 'Observation of worn surface', buttonLabel: 'Maginify' },
-    { src: '../simulation/outputImages/c02-2.png', caption: 'Wear track', buttonLabel: 'More Maginfy' },
+    { src: '../simulation/outputImages/c02-1.png', caption: 'Observation of worn surface under a scanning electron microscope (SEM)', buttonLabel: 'Study under a scanning electron microscope (SEM)' },
+    { src: '../simulation/outputImages/c02-2.png', caption: 'Wear track', buttonLabel: 'Examination of the worn surface under a microscope at greater magnification.' },
     { src: '../simulation/outputImages/c02-3.png', caption: 'Wear debris adhered to the counter body', buttonLabel: 'Counter body' },
- { src: '../simulation/outputImages/c02-4.png', caption: 'Ball', buttonLabel: 'Ball holder' }
+    { src: '../simulation/outputImages/c02-4.png', caption: 'Ball', buttonLabel: 'Observation of worn surface' }
 ];
 
 let index1 = 0;
@@ -210,11 +211,13 @@ function updateSlideshow(material) {
     }
 }
 
+// ✅ Working infinite looping for Material 1 Next button
 material1NextBtn.onclick = () => {
     index1 = (index1 + 1) % material1Slides.length;
     updateSlideshow(1);
 };
 
+// ✅ Working infinite looping for Material 2 Next button
 material2NextBtn.onclick = () => {
     index2 = (index2 + 1) % material2Slides.length;
     updateSlideshow(2);
@@ -222,17 +225,19 @@ material2NextBtn.onclick = () => {
 
 function showResult() {
     resultContainer.style.display = 'block';
+    document.getElementById("conclusion").style.display = "block";
+    // document.getElementById("messageBox").style.display = "none";
 
     if (selectedMaterial === 1) {
         material1Slideshow.style.display = 'block';
         material2Slideshow.style.display = 'none';
         index1 = 0;
-        updateSlideshow(1);
+        updateSlideshow(1);  // ensure initial slide is set
     } else if (selectedMaterial === 2) {
         material1Slideshow.style.display = 'none';
         material2Slideshow.style.display = 'block';
         index2 = 0;
-        updateSlideshow(2);
+        updateSlideshow(2);  // ensure initial slide is set
     }
 }
 
@@ -266,4 +271,84 @@ moveButton3.addEventListener("click", function () {
 // Refresh logic
 refreshButton.addEventListener('click', function () {
     window.location.href = window.location.href;
+});
+
+//
+let flag1 = false;
+let flag2 = true;
+
+function showMessage() {
+  const box = document.getElementById('messageBox');
+  document.getElementById("out").style.display = "block";
+
+  let learningOutcomes = `
+    <h3>Learning Outcomes:</h3>
+    <ul>
+      <li>Understand the importance of wear</li>
+      <li>Perform wear test</li>
+      <li>Distinguish between abrasive and adhesive wear</li>
+    </ul>
+  `;
+
+  if (selectedMaterial == 2) {
+    box.innerHTML = `
+      <h3>Abrasive Wear – Conclusion</h3>
+      <p>
+        Abrasive wear occurs when hard particles or rough surfaces slide against a softer material,
+        causing material removal through micro-cutting or plowing. It is influenced by surface hardness,
+        contact pressure, and sliding speed. Common in machining, polishing, and particulate environments.
+        <br><br><button class="reveal-button" onclick="displayObjectives()">Overall conclusion</button>
+      </p>
+    `;
+    box.style.display = 'block';
+
+  } else if (selectedMaterial == 1) {
+    box.innerHTML = `
+      <h3>Adhesive Wear – Conclusion</h3>
+      <p>
+        Adhesive wear is caused by material transfer between surfaces due to adhesion. It results in
+        material loss and buildup, occurring when materials weld together under pressure and separate
+        during motion. Common in metal-to-metal contact without proper lubrication.
+      </p><br><br><br>
+      <button class="reveal-button" onclick="displayObjectives()">Overall conclusion</button>
+    `;
+    box.style.display = 'block';
+
+  } else {
+    box.style.display = 'none';
+  }
+}
+
+///ne w
+
+  function displayObjectives() {
+    document.getElementById("learningGoals").style.display = "block";
+    // document.getElementById("resultContainer").style.display="none";
+  }
+document.addEventListener('DOMContentLoaded', () => {
+  // Choose the buttons you want ticks on (narrow selector if needed)
+  const buttons = document.querySelectorAll('#moveButton, #moveButton2');
+
+  // Ensure each button has a <span class="tick">✔️</span>
+  buttons.forEach(btn => {
+    let tick = btn.querySelector('.tick');
+    if (!tick) {
+      tick = document.createElement('span');
+      tick.className = 'tick';
+      tick.textContent = '✔️';
+      btn.appendChild(tick);
+    }
+  });
+
+  // Use event delegation so inline onclick/toggleButtons don’t interfere
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('#moveButton, #moveButton2');
+    if (!btn) return;
+
+    // If you want only the latest clicked button to show a tick:
+    document.querySelectorAll('#moveButton, #moveButton2').forEach(b => b.classList.remove('has-tick'));
+    btn.classList.add('has-tick');
+
+    // If your inline onclick returns false somewhere, this still runs
+  });
 });
